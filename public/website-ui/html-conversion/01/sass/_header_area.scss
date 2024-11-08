@@ -1,0 +1,325 @@
+// header area css here
+#header_area{
+    background-image: url(../img/hero-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: #07153A;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    
+    // header top menu start
+    .header_top_menu{
+        .inner_header_top_menu{
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: transparent;
+            align-items: center;
+            padding-top: 10px;
+            margin-bottom: -10px;
+        }
+        
+        // contact information here
+        .contact_info{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                padding: 0px;
+                gap: 25px;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: $whColor;
+                        font-size: 13px;
+                        font-weight: 400;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 7px;
+                        transition: all 0.5s;
+                        span{
+                            font-size: 12px;
+                        }
+                        &:hover{
+                            color: $pColor;
+                        }
+                    }
+                }
+            }
+        }
+        // social icons area here
+        .social_info{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                gap: 5px;
+                padding: 0px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $whColor;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $pColor;
+                        } 
+                    }
+                }
+                &:nth-child(1){
+                    border-right: 1px solid $whColor;
+                    padding-right: 20px;
+                }
+                &:nth-child(2){
+                    gap: 20px;
+                    li{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // header top menu start
+    // header primary menu start
+    #header_primary_menu{
+        .navbar-collapse{
+            flex-grow: 0;
+        }
+        z-index: 9999999 !important;
+        .navbar_close_btn{
+            background-color: rgba(9, 1, 46, 0.616);
+            position: fixed;
+            width: calc(100% - 300px);
+            min-height: 100vh;
+            right: 0px;
+            top:0px;
+            border: none;
+            outline: none;
+            display: none;
+        }
+        .inner_header_primary_menu{
+            background-color: $sColor;
+            padding: 10px 10px 10px 20px;
+            min-height: 80px;
+        }
+        .navbar-brand{
+            margin-right: 50px;
+            img{
+                width: 200px;
+            }
+        }
+        .navbar-toggler{
+            outline: none;
+            border: none;
+            font-size: 26px;
+            box-shadow: none;
+            color: $whColor;
+        }
+        #primary_menu{
+            ul{
+                li{
+                    a{
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: $whColor;
+                        transition: all 0.5s;
+                        font-family: $pFont;
+                        &:hover{
+                            color: $pColor;
+                        }
+                    }
+                    a.active{
+                        color: $pColor;
+                    }
+                }
+            }
+        }
+        .header_search_box{
+            position: relative;
+            .search_btn{
+                background-color: transparent;
+                color: $whColor;
+                font-size: 17px;
+                padding: 10px;
+                display: none;
+            }
+            .search_box{
+                background-color: $whColor;
+                border-radius: 3px;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                height: 30px;
+                overflow: hidden;
+                input{
+                    background-color: transparent;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    padding: 0px 10px;
+                    font-weight: 500;
+                }
+                button{
+                    background-color: $pColor;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    width: 30px;
+                    height: 100%;
+                    color: $whColor;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    // header primary menu end
+
+    // hero area start
+    #hero_area{
+        width: 100%;
+        .inner_hero_area{
+            min-height: 550px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            font-size: 16px;
+            display: block;
+            padding: 20px;
+            text-align: center; 
+            color: $whColor; 
+        }
+        h2{
+            font-size: 50px;
+            text-align: center;
+            font-weight: 700;
+            line-height: 60px;
+            margin-bottom: 50px;
+            color: $whColor;
+            font-family: $pFont;
+        }
+        .hero_category_search_box{
+            display: flex;
+            flex-direction: row;
+             justify-content: center;
+             align-items: center;
+             gap: 10px;
+            select{
+                background-color: $whColor;
+                width: 130px;
+                padding: 8px 5px;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+            }
+            button{
+                background-color: $pColor;
+                padding: 8px 25px;
+                border-radius: 4px;
+                color: $whColor;
+                border: none;
+                i{
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+                span{
+                    display: inline;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+    // hero area end
+}
+
+#hero_service_area{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    padding: 0px 0px 50px 0px;
+    z-index: 2;
+    position: relative;
+    .inner_service_area{
+        display: flex; flex-direction: row; justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .service_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px 0 #00000017;
+            padding: 20px;
+            border-radius: 0px 0px 10px 10px;
+            .service_logo{
+                font-size: 50px;
+                background-color: $sColor;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 3px solid $whColor;
+                margin-top: -100px;
+                color: $whColor;
+                transition: all 0.5s;
+                z-index: 1;
+            }
+            .title{
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 10px;
+                font-family: $pFont;
+                text-align: center;
+            }
+            p{
+                font-size: 15px;
+                text-align: center;
+            }
+            transition: all 0.5s;
+            &:hover{
+                background-color: $pColor;
+                .service_logo{
+                    background: linear-gradient(45deg, #07153abb, #07153ac2), url(../img/hero-bg.webp);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .title, p{
+                    color: $whColor;
+                }
+            }
+        }
+    }
+}
+

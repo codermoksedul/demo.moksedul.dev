@@ -1,0 +1,14 @@
+*,*::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "poppins", sans-serif;
+    line-height: 1.2em;
+}
+img{
+    max-width: 100%;
+}

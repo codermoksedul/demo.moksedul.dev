@@ -1,0 +1,94 @@
+@media only screen and (max-width:990px) {
+    .navbar-nav li:last-child a {
+        background: #fe6347;
+        border-radius: 25px;
+        color: #fff;
+        padding: 7px 20px !important;
+        margin-left: 0px !important;
+        text-align: center;
+        max-width: 200px;
+        margin-top: 20px;
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    #hero_aria .hero_text_aria h1{
+        font-size: 40px !important;
+    }
+    .mobile_menu_only{
+        display: block !important;
+    }
+    menu#navbar-menu_toggler ul {
+        padding-top: 20px;
+        z-index: 99999;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        padding-bottom: 40px;
+    }
+    menu#navbar-menu_toggler ul li{
+        border: 1px;
+    }
+    menu#navbar-menu_toggler ul li {
+        border-bottom: 1px solid #00000012;
+        max-width: 90%;
+    }
+    menu#navbar-menu_toggler ul li:last-child {
+        border:none;
+    }
+    .mobile_menu_logo {
+        position: absolute;
+        top: 25px;
+        min-width: 60%;
+    }
+    .mobile_menu_close {
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 25px;
+        right: 35px;
+        max-width: 30%;
+        border: none;
+        z-index: 1;
+        opacity: 1;
+        cursor: pointer !important;
+        background: #ffefef;
+        display: none;
+    }
+    button.navbar-toggler {
+        font-size: 30px;
+        border: none !important;
+        outline: none !important;
+    }
+    .navbar-toggler:hover{
+        color: #fe6347;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+        color: #fe6347;
+    }
+    .btn{
+    font-size: 14px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

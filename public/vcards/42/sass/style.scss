@@ -1,0 +1,30 @@
+$pColor: #f7b618;
+$sColor: #000;
+$whColor: #fff;
+$bgColor: #000;
+$txtColor: #000;
+
+$pFont: 'Montserrat', sans-sarif;
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: normal;
+    font-family: $pFont;
+    background-color: $bgColor;
+}
+img{
+    max-width: 100%;
+}
+
+// link list style
+@import 'header_area.scss';
+@import 'about_area.scss';
+@import 'contact_form.scss';
+@import 'responsive.scss';

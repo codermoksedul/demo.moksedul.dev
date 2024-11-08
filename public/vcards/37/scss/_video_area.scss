@@ -1,0 +1,15 @@
+#video_area{
+  .inner_video_area{
+    margin: 20px 0px;
+    border-radius: 4px;
+    overflow: hidden;
+    video{
+      width: 100%;
+    }
+    iframe{
+      width: 100%;
+      min-height: 200px;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+#content_toggle_area{
+  .content_toggle_area{
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px
+    $box_shadow_color;
+    overflow: hidden;
+    border-radius: 02px;
+    .content_toggle_box{
+      border-bottom: 1px solid #20202017;
+      padding: 10px;
+      .content_toggle_btn_box{
+        position: relative;
+        padding: 2px;
+        cursor: pointer;
+        button{
+          border: none;
+          background-color: transparent;
+          color: #000;
+          font-size: 16px;
+          text-align: center;
+          font-family: $fontFml;
+          font-weight: 600;
+          padding-left: 20px;
+        }
+        i{
+          position: absolute;
+          left: 0px;
+          color: #000;
+          font-weight: 700;
+        }
+      }
+      .content_box{
+        color: #000;
+        font-size: 17px;
+        line-height: 1.5em;
+        overflow: hidden;
+        font-family: Sans-serif;
+        height: 0px;
+      }
+      .content_box_active{
+        height: 100%;
+      }
+    }
+    
+  }
+}

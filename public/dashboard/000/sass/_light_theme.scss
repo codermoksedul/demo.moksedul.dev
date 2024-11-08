@@ -1,0 +1,117 @@
+// light theme start
+
+$pColor: #FF0052;
+$light_sColor: #fff;
+$light_bgColor: rgb(241, 241, 241);
+$whColor: #fff;
+$swhColor: rgba(255, 255, 255, 0.5);
+$light_text_color: #000;
+
+
+.light_active{
+  background-color: $light_bgColor !important;
+  #menu_area{
+    background-color: $light_sColor;
+    border-right: 1px solid rgba(0, 0, 0, 0.158);
+    .logo_box{
+      a{
+        .logo_txt{
+          span{
+            color: $pColor;
+          }
+        }
+      }
+    }
+    .left_menu_box{
+      .title{
+        color: rgba(0, 0, 0, 0.479);
+      }
+      .menu_list_box{
+        li{
+          a{
+          .menu_icon{
+            color: $light_text_color;
+          }
+          .menu_txt{
+            color: $light_text_color;
+          }
+          &:hover{
+            .menu_icon, .menu_txt{
+              color: $pColor;
+            }
+          }
+          }
+          .active_menu{
+            .menu_icon, .menu_txt{
+              color: $pColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #interface_area{
+    #interface_header_area{
+      background-color: $light_bgColor;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+      .left_side_top_box{
+        .menu_toggler_btn{
+          color: $light_text_color;
+        }
+        .search_box{
+          background-color: $light_sColor;
+          border: 1px solid rgba(0, 0, 0, 0.11);
+          input{
+          color: $light_text_color;
+          &::placeholder{
+            color: $light_text_color !important;
+          }
+          }
+          .search_btn{
+            color: $light_text_color;
+          }
+        }
+      }
+      .right_side_top_box{
+        .color_switching_box{
+          .color_switching_btn{
+            color: $light_text_color;
+          }
+        }
+        .notification_box{
+          .notificaton_btn{
+            color: $light_text_color;
+          }
+          .notification_popup_box{
+            .notificaton_popup_body{
+              ul{
+                li{
+                  a{
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+                  .icon{
+                    color: $whColor !important;
+                    background-color: $pColor !important;
+                  }
+                  .info{
+                    .sub_title{
+                      color: $light_text_color;
+                    }
+                    span{
+                      color: $light_text_color;
+                    }
+                  }
+                  }
+                }
+                .see_all_button{
+                  color: $pColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// light theme end

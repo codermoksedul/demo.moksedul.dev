@@ -1,0 +1,183 @@
+// info area css here
+#info_area{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    padding: 40px 0px;
+    overflow: hidden;
+    background-image: url(../img/footer-bg.webp);
+    margin-top: 20PX;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: -50px;
+    .inner_info_area{
+        border-radius: 12px;
+        width: 80%;
+        margin: auto;
+        padding: 30px 10px;
+        background-color: $whColor;
+        margin-top: 70px;
+        position: relative;
+    }
+    .contact_info{
+        &:after {
+          content: '';
+          position: absolute;
+          width: 80%;
+          height: 1%;
+          background-color: $pColor;
+          left: 10%;
+          top: 2%;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          width: 1%;
+          height: 80%;
+          background-color: $pColor;
+          left: 2%;
+          top: 10%;
+        }
+        ul{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 15px;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 1%;
+                background-color: $pColor;
+                bottom: 2%;
+              }
+              &:before {
+                content: '';
+                position: absolute;
+                width: 1%;
+                height: 80%;
+                background-color: $pColor;
+                right: 2%;
+                top: 10%;
+              }
+            li{
+                width: 100%;
+                list-style: none;
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    font-size: 17px;
+                    color: $txtColor;
+                    text-transform: lowercase;
+                    display: block;
+                    width: 100%;
+                    padding: 0px;
+                    border-radius: 10px;
+                    transition: all 0.5s;
+                    span{
+                        font-size: 17px;
+                        color: $txtColor;
+                        margin-right: 5px;
+                        background-color: $pColor;
+                        border-radius: 100%;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;;
+                        width: 30px;
+                        height: 30px;
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        background-color: $whColor;
+                        color: $pColor;
+                        span{
+                            color: $txtColor;
+                            background-color: $whColor;
+                            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.219);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .social_connect_area{
+        h3{
+            text-align: center;
+            color: $txtColor;
+            font-weight: 500;
+            padding: 3px;
+            width: 50%;
+            margin: auto;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 15px;
+            background-color: $whColor;
+            margin-bottom: 15px;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+            background-color: $whColor;
+            z-index: 1;
+            span{
+                background-color: $whColor;
+                width: 100%;
+                display: block;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              top: 10%;
+              left: -10%;
+              width: 120%;
+              height: 80%;
+              background-color: $pColor;
+              animation: 3s connect_animate infinite linear;
+              z-index: -1;
+            }
+            @keyframes connect_animate {
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 5%;
+            width: 70%;
+            margin: auto;
+            border-radius: 4px;
+            li{
+                a{
+                    img{
+                        width: 40px;
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .design_shape{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    
+}

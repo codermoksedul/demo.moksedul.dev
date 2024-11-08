@@ -1,0 +1,67 @@
+// responsive website css here
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+  #menu_area{
+    width: 85px !important;
+  .logo_box{
+    a{
+      .logo_txt{
+        display: none;
+      }
+    }
+  }
+  .left_menu_box{
+    .title{
+      display: none;
+    }
+    .menu_list_box{
+      gap: 0px !important;
+      align-items: center;
+      li{
+        a{
+          .menu_icon{
+            font-size: 20px;
+          }
+          .menu_txt{
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+  }
+  #interface_area{
+    width: calc(100% - 85px) !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #menu_area{
+    position: absolute;
+    left: -350px;
+    z-index: 999;
+  }
+  .active_menu_area{
+    left: 0px !important;
+  }
+  #interface_area{
+    width: 100%;
+    .menu_toggler_btn{
+      display: block !important;
+    }
+    .search_box{
+      width: 200px !important;
+    }
+  }
+  .collapse_active_interface_area{
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 420px) {
+  
+}

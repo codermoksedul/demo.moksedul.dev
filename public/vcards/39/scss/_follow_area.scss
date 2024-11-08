@@ -1,0 +1,31 @@
+#follow_area{
+  .inner_follow_area{
+    margin-top: 10px;
+    .title{
+      h2{
+        color: $pColor;
+        text-align: center;
+        font-family: $fontFml;
+        font-size: 21px;
+      }
+    }
+    .follow_icons_box{
+      display: block;
+      text-align: center;
+      box-shadow: 0px 0px 10px 0px $box_shadow_color;
+      padding: 10px 0px;
+      margin-top: 10px;
+      li{
+        list-style: none;
+        display: inline-block;
+        a{
+          font-size: 25px;
+          width: 100%;
+          margin: 10px;
+          color: $pColor;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

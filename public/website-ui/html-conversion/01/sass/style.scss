@@ -1,0 +1,72 @@
+// utilitties area custom css here-----
+@import "utilitties";
+
+*, *::after, *::before{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: $pFont;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+}
+.heading_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    .subtitle_heading{
+        font-size: 16px;
+        font-weight: 600;
+        color: $pColor;
+    }
+    .title_heading{
+        font-size: 40px;
+        font-weight: 700;
+        color: $txtColor;
+        text-transform: capitalize
+    }
+}
+//-----------custom css list here------------
+
+// header area custom css here-----
+@import "header_area";
+
+// best_house_area custom css here-----
+@import "best_house_area";
+
+// populer_categores_area custom css here-----
+@import "populer_categores_area";
+
+// testimonial_area custom css here-----
+@import "testimonial_area";
+
+// our_propartes_area custom css here-----
+@import "our_propartes_area";
+
+// submit_property_area custom css here-----
+@import "submit_property_area";
+
+// our_agentbox_area custom css here-----
+@import "our_agentbox_area";
+
+// footer area custom css here-----
+@import "footer_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// preloader area custom css here-----
+@import "preloader";
+

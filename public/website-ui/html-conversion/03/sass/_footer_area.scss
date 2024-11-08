@@ -1,0 +1,103 @@
+// footer area css here
+#footer_area{
+  width: 100%;
+  padding: 70px 0px 0px;
+  background-color: #212121;
+  .footer_box{
+    .logo{
+      a{
+        text-decoration: none;
+        color: $whColor;
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+    span{
+      color: $whColor;
+      font-size: 17px;
+      font-weight: 600;
+      display: block;
+      margin: 20px 0px;
+    }
+    p{
+      color: $whColor;
+      font-size: 14px;
+    }
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      padding: 0px;
+      gap: 20px;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          font-size: 16px;
+          color: $whColor;
+          transition: all 0.5s;
+          background-color: $pColor;
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          padding: 13px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;;
+          align-items: center;
+          &:hover{
+            color: $pColor;
+            background-color: $whColor;
+          }
+        }
+      }
+    }
+  }
+  .footer_link_box{
+    .title{
+      color: $pColor;
+    }
+    ul{
+      margin-top: 30px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: left;
+      gap: 10px;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          font-size: 15px;
+          color: $whColor;
+          transition: all 0.3s;
+          &:hover{
+            color: $pColor;
+          }
+        }
+      }
+    }
+  }
+  .copyright_area{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    padding-top: 12px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.192);
+    color: $whColor;
+    background-color: $txtColor;
+    a{
+      text-decoration: none;
+      font-weight: 500;
+      color: $pColor;
+    }
+  }
+}

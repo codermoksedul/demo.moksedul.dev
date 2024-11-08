@@ -1,0 +1,101 @@
+// utilitties area custom css here-----
+@import "utilitties";
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    font-family: $pFont;
+    background-color: $bgColor;
+    color: $whColor;
+}
+img{
+    max-width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.37); 
+    border-radius: 4px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d4d4d452; 
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $pColor; 
+  }
+
+.container{
+    max-width: 1200px;
+}
+// headign area start
+.heading_box{
+    padding: 50px 0px;
+    text-align: center;
+    .subtitle{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
+    .title{
+        font-size: 45px;
+        font-weight: 600;
+        .title_design{
+            font-weight: 400 !important
+        }
+    }
+    .descritption{
+        max-width: 500px;
+        margin: auto;
+        letter-spacing: 1.5px;
+    }
+}
+// headign area end
+//-----------custom css list here------------
+
+// header area custom css here-----
+@import "header_area";
+
+// hot_bids_area custom css here-----
+@import "hot_bids_area";
+
+// top_aritist_area custom css here-----
+@import "top_aritist_area";
+
+// explore_nfts_area custom css here-----
+@import "explore_nfts_area";
+
+// gallery_area custom css here-----
+@import "gallery_area";
+
+// service_area custom css here-----
+@import "service_area";
+
+// blog_area custom css here-----
+@import "blog_area";
+
+// footer area custom css here-----
+@import "footer_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// preloader area custom css here-----
+@import "preloader";
+

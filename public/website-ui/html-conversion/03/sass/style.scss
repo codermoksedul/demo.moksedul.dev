@@ -1,0 +1,98 @@
+// utilitties area custom css here-----
+@import "utilitties";
+
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    background-color: $bgColor;
+    font-family: $pFont;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+.container{
+  max-width: 1200px;
+}
+.my_btn{
+  background-color: $pColor;
+  padding: 10px 15px;
+  color: $whColor;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  &:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.158);
+    background-color: $whColor;
+    color: $pColor;
+  }
+}
+.scroll_btn{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px 12px;
+}
+::selection{
+  background-color: $pColor;
+  color: $whColor;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $pColor;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $pColor;
+  }
+//-----------custom css list here------------
+
+// header area custom css here-----
+@import "header_area";
+
+// about us area custom css here-----
+@import "about_us_area";
+
+// service area custom css here-----
+@import "service_area";
+
+// coustomer area custom css here-----
+@import "coustomer_review_area";
+
+// testimonial area custom css here-----
+@import "testimonial_area";
+
+// recent blog area custom css here-----
+@import "recent_blog_area";
+
+// footer area custom css here-----
+@import "footer_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// preloader area custom css here-----
+@import "preloader";

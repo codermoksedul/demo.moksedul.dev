@@ -1,0 +1,103 @@
+@media screen and (max-width: 1040px) and (min-width: 769px) {
+  #menu_area{
+    width: 200px;
+    .logo{
+      a{
+        font-size: 20px;
+      }
+    }
+    .items_box{
+      li{
+        a{
+          font-size: 14px;
+          i{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  #interface_area{
+    width: calc(100% - 200px);
+  }
+
+
+}
+@media screen and (max-width: 1080px){
+  #interface_area{
+    #team_member_table_box{
+      width: 100%;
+      overflow-x: scroll;
+      table{
+        min-width: 800px;
+        tr{
+          font-size: 13px !important;
+        }
+      }
+    }
+    #pagination_area{
+      li{
+        a{
+          font-size: 12px !important;
+          width: 25px !important;
+          height: 25px !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  #menu_area{
+   position: absolute;
+   left: -350px;
+   width: 300px !important;
+  }
+  .menu_active{
+    position: relative !important;
+    left: 0px !important;
+  }
+  #interface_area{
+    width: 100%;
+    .user_profile{
+      span{
+        display: none;
+      }
+    }
+  .top_menu_area{
+    justify-content: space-between;
+  }
+    .humburger_btn{
+      display: block !important;
+    }
+  }
+  .interface_area_toggle{
+    width: calc(100% - 300px) !important;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  #main_layout{
+    .top_box{
+      .search_box{
+        width: 180px;
+        height: 34px !important;
+      }
+      button{
+        height: 35px;
+        padding: 0px;
+        width: 150px;
+      }
+    }
+  }
+  #interface_header_area{
+    .interface_title{
+      font-size: 22px;
+    }
+    .right_box{
+      height: 34px;
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+  
+}

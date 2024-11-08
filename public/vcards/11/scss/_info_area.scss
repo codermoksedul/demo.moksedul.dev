@@ -1,0 +1,57 @@
+#contact_area{
+  overflow: hidden;
+  .inner_contact_area{
+    padding: 50px 0px;
+    background-color: $bgColor;
+    .info_box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 10px 0px;
+      width: 90%;
+      margin: auto;
+      .child_contact_box{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        a{
+          text-decoration: none;
+          color: $txtColor;
+          text-align: center;
+          &:hover {
+            color: rgb(0, 60, 151);
+            i{
+              transform: scale(1.1);
+            }
+          }
+        }
+        i{
+          font-size: 20px;
+          padding: 10px;
+          display: block;
+          transition: all 0.5s;
+        }
+        span{
+          font-size: 15px;
+          font-weight: $fw_MD;
+          display: block;
+        }
+        &:nth-child(1){
+          border-right: 2px dashed $txtColor;
+          border-bottom: 2px dashed $txtColor;
+        }
+        &:nth-child(2){
+          border-bottom: 2px dashed $txtColor;
+        }
+        &:nth-child(3){
+          border-right: 2px dashed $txtColor;
+        }
+        &:nth-child(1){
+          border-right: 2px dashed $txtColor;
+        }
+      }
+    }
+  }
+}

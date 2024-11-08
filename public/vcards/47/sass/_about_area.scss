@@ -1,0 +1,239 @@
+#about_area{
+    padding: 20px 0px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 0px;
+    .inner_about_area{
+        span{
+            color: $whColor;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 10px;
+                background-color: rgba(255, 0, 0, 0);
+                left: 0px;
+                top: 0px;
+                border-top: 2px solid $pColor;
+                border-left: 2px solid $pColor;
+                border-radius: 12px 0px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 10px;
+                background-color: rgba(255, 0, 0, 0);
+                right: 0px;
+                bottom: 0px;
+                border-bottom: 2px solid $pColor;
+                border-right: 2px solid $pColor;
+                border-radius: 12px 0px;
+
+            }
+            li{
+                list-style: none;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 50px;
+                    background-color: rgba(255, 0, 0, 0);
+                    right: 0px;
+                    top: 0px;
+                    border-top: 2px solid $pColor;
+                    border-right: 2px solid $pColor;
+                    border-radius: 0px 12px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 50px;
+                    background-color: rgba(255, 0, 0, 0);
+                    left: 0px;
+                    bottom: 0px;
+                    border-bottom: 2px solid $pColor;
+                    border-left: 2px solid $pColor;
+                    border-radius: 0px 12px;
+    
+                }
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    color: $txtColor;
+                    transition: all 0.5s;
+                    text-align: left;
+                    line-height: 22px;
+                    font-size: 1rem;
+                    i{
+                        color: $pColor;
+                    }
+                    &:hover{
+                        color: $pColor;
+                    }
+                }
+            }
+        }
+    }
+    .social_information_box{
+        display: block;
+        position: relative;
+        margin-top: 50px;
+        background: url(../img/footer-bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        min-height: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding: 0px 0px 50px 0px;
+        .social_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top:80px;
+            h4{
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: $whColor;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                row-gap: 10px;
+                margin-top: 10px;
+                padding: 0px 0px 30px 0px;
+                li{
+                    list-style: none;
+                    a{
+                        color: $pColor;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100%;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.5s;
+                        background-color: $whColor;
+                        &:hover{
+                            background-color: $sColor;
+                            color: $whColor;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+        .footer_text{
+            text-align: center;
+            font-size: 0.9rem;
+            position: absolute;
+            width: 100%;
+            margin-bottom: -30px;
+        }
+    }
+}
+
+
+
+#contact_form_area{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 20px;
+    form{
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.288);
+      border-radius: 10px;
+      padding: 50px 20px;
+      background-color: $whColor;
+      overflow: hidden;
+      h2{
+        text-align: center;
+        color: $pColor;
+        margin-bottom: 50px;
+      }
+      label{
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.3rem;
+        color: $txtColor;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 15px;
+        display: none;
+      }
+      input,textarea{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-radius: 3px;
+        border: none;
+        font-size: 16px;
+        outline: none;
+        font-weight: 500;
+        color: $txtColor;
+        letter-spacing: 0.6px;
+        margin-top: 5px;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.144);
+        border-radius: 7px;
+        margin-top: 20px;
+        &::placeholder{
+          font-weight: 500;
+        }
+      }
+      textarea{
+        height: 100px;
+      }
+      button{
+        display: block;
+        padding: 15px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        border: none;
+        border-radius: 8px;
+        background-color: $pColor;
+        color: $whColor;
+        margin: auto;
+        margin-top:30px;
+        cursor: pointer;
+        transition: all 0.5s;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        &:hover{
+          background: $txtColor;
+        }
+      }
+    }
+  }

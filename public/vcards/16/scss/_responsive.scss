@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px){
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+  #about_me_area{
+    ul{
+      li{
+        a{
+          font-size: 16px;
+          span{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  #business_card_area{
+    width: 100%;
+  }
+  
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 540px){
+  #business_card_area{
+    width: 100%;
+  }
+  .header_logo_box{
+    img{
+      max-width: 200px !important;
+    }
+  }
+  #about_me_area{
+    padding: 20px;
+    ul{
+      li{
+        a{
+          font-size: 14px;
+          span{
+            font-size: 13px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  #header_txt_area{
+    padding-top: 40px;
+    h1{
+      font-size: 30px;
+    }
+    h3{
+      font-size: 18px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  #business_card_area{
+    width: 100%;
+  }
+  .header_logo_box{
+    img{
+      max-width: 170px !important;
+    }
+  }
+  #header_txt_area{
+    padding-top: 20px;
+    h3{
+      font-size: 18px;
+    }
+  }
+  #header_info_area{
+    ul{
+      li{
+        a{
+          font-size: 17px;
+        }
+        &:last-child{
+          a{
+            font-size: 16px !important;
+          }
+        }
+      }
+      
+    }
+  }
+  
+  #contact_with_me_area{
+    ul{
+      width: 95%;
+    }
+  }
+}

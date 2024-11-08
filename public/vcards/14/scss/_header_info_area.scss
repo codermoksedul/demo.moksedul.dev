@@ -1,0 +1,41 @@
+#header_info_area{
+  position: relative;
+  overflow: hidden;
+  ul{
+    li{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      a{
+        font-size: 20px;
+        text-decoration: none;
+        color: $sColor;
+        display: block;
+        font-weight: $fw_SM;
+        span{
+          font-size: 30px;
+          color: $pColor;
+          display: block;
+          margin-bottom: 10px;
+        }
+        &:hover{
+          color: $whColor;
+          span{
+            color: rgb(6, 199, 119);
+          }
+        }
+      }
+      &:last-child{
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        a{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

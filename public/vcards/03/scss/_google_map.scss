@@ -1,0 +1,9 @@
+#google_map_area{
+  padding: 30px 20px;
+  overflow: hidden;
+  iframe{
+    width: 100%;
+    min-height: 350px;
+    border-radius: 3px;
+  }
+}

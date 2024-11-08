@@ -1,0 +1,87 @@
+// dark theme here
+$dark_bgColor: #202124;
+
+.dark_active{
+  background-color: $dark_bgColor;
+  #menu_area{
+    background-color: $dark_bgColor;
+    border-color: #f8f8f815;
+    .logo{
+      a{
+        color: $whColor;
+      }
+    }
+    .items_box{
+      li{
+        a{
+          color: $whColor;
+        }
+      }
+    }
+  }
+
+
+  // interface area
+  #interface_area{
+    background-color: $dark_bgColor;
+    .top_menu_area{
+      border-color: #f8f8f815;
+      .humburger_btn{
+        color: $whColor;
+      }
+      .right_menu_box{
+        .trail_btn{
+          background-color: rgb(66, 66, 66);
+          color: $whColor;
+        }
+        .setting_btn{
+          color: $whColor;
+        }
+        .user_profile{
+          color: $whColor;
+        }
+      }
+    }
+  }
+  #interface_header_area{
+    background-color: $dark_bgColor;
+  .interface_title{
+    color: $whColor;
+  }
+  }
+  #main_layout{
+    background-color: $dark_bgColor;
+    .search_box{
+      background-color: $dark_bgColor;
+      input{
+       background-color: transparent;
+      }
+    }
+  }
+  #team_interface{
+    #team_member_table_box{
+      table{
+        tr{
+          color: $whColor !important;
+        }
+      }
+      #pagination_area{
+        li{
+          a{
+            background-color: $dark_bgColor;
+            color: $whColor;
+            border-color: $whColor;
+            &:hover{
+              color: $pColor;
+              border-color: $pColor;
+            }
+          }
+          a.active{
+            color: $pColor;
+            border-color: $pColor;
+          }
+        }
+      }
+    }
+  }
+}

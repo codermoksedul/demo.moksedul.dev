@@ -1,0 +1,90 @@
+#our_agentbox_area{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0px;
+    .agent_box{
+        min-height: 400px;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 30px;
+        box-shadow: 0 0 8px 0 #00000015;
+        &:hover{
+           .agent_image_box{
+            img{
+                transform: scale(1.1);
+            }
+           }
+           .agent_info_box{
+            background-color: $pColor;
+            h5, span{
+                color: $whColor;
+            }
+            ul{
+                li{
+                    a{
+                        color: $whColor;
+                        box-shadow: 0 2px 5px 0 #ffffff00;
+                        background-color: rgba(255, 255, 255, 0.164);
+                    }
+                }
+            }
+           }
+        }
+        .agent_image_box{
+            width: 100%;
+            height: 80%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                transition: all 0.5s;
+            }
+        }
+        .agent_info_box{
+            background-color: $whColor;
+            padding: 15px 0px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+            h5{
+                font-weight: 600;
+                line-height: 20px;
+            }
+            span{
+                font-weight: 400;
+                font-size: 13px;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                padding: 15px 0px 0px 0px;
+                li{
+                    a{
+                        color: #000000cb;
+                        text-decoration: none;
+                        display: flex;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        box-shadow: 0 2px 5px 0 #00000027;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: $whColor;
+                            color: $pColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#about_me_area{
+  text-align: center;
+  background-color: $whColor;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  h3{
+    margin: 5px 0 20px 0;
+    font-size: 1.5rem;
+    color: $txtColor;
+    font-weight: $fw_X;
+  }
+  p{
+    font-size: 14px;
+    font-weight: $fw_SM;
+    line-height: 1.2rem;
+    color: $txtColor;
+  }
+}

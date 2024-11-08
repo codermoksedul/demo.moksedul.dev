@@ -1,0 +1,43 @@
+#header_area{
+  position: relative;
+  .inner_header_area{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .header_logo_box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+     img{
+      width: 200px;
+      border-radius: 100%;
+      border: 5px solid $whColor;
+     }
+    }
+    .header_info{
+      text-align: center;
+      z-index: 1;
+      margin-top: 40px;
+      h1{
+        color: $whColor;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      h2{
+        font-size: 20px;
+        color: $whColor;
+        margin-top: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

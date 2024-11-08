@@ -1,0 +1,251 @@
+// header area css here
+#header_area{
+  width: 100%;
+  overflow: hidden;
+  // top header area start
+  .top_header_area{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    .container{
+      height: 100%;;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+          gap: 10px;
+          color: $txtColor;
+          font-size: 16px;
+          transition: all 0.5s;
+          font-weight: 400;
+          &:hover{
+            color: $pColor;
+          }
+          .icon{
+            color: $pColor;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .social_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      gap: 20px;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          font-size: 16px;
+          color: $txtColor;
+          transition: all 0.5s;
+          &:hover{
+            color: $pColor;
+          }
+        }
+      }
+    }
+  }
+  // top header area end
+  // navbar menu area start
+  .navbar{
+    height: 80px;
+    .navbar-collapse {
+      flex-grow: 0;
+    }
+    .navbar-brand{
+      color: $txtColor;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .navbar-toggler{
+      border: none;
+      outline: none;
+      color: $txtColor;
+      transition: all 0.5s;
+      box-shadow: none;
+      font-size: 25px;
+      &:hover{
+        color: $pColor;
+      }
+    }
+    #menu_area{
+      ul{
+        gap: 30px;
+        li{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          a{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $txtColor;
+            transition: all 0.5s;
+            position: relative;
+            padding: 5px 0px;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 2px;
+              background-color: $pColor;
+              bottom: 0px;
+              left: 0px;
+              transition: all 0.5s;
+            }
+            &:hover{
+              color: $pColor;
+              &::after{
+                width: 100%;
+              }
+            }
+          }
+          a.active{
+            color: $pColor;
+            &::after{
+              width: 100%;
+            }
+          }
+          .my_btn{
+            background-color: $pColor;
+            padding: 10px 15px;
+            color: $whColor;
+            &::after{
+              display: none;
+            }
+            &:hover{
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.158);
+              background-color: $whColor;
+              color: $pColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  // navbar menu area end
+}
+
+// hero area start
+#hero_area{
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  #hero_slider{
+    .carousel-control-next, .carousel-control-prev{
+      width: 10%;
+      height: 30px;
+      top: 48%;
+      opacity: 1;
+      i{
+        background-color: $txtColor;
+        width: 35px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .carousel-control-left{
+      left: 0%;
+    }
+    .carousel-control-next{
+      right: 0%;
+    }
+    .carousel-item{
+      width: 100%;
+      position: relative;
+      width: 100%;
+      max-height: 600px;
+      img{
+        width: 100%;
+      }
+      .carousel-caption{
+        background-color: rgba(5, 0, 0, 0.719);
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        span{
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+        h2{
+          font-size: 40px;
+          font-weight: 700;
+        }
+        p{
+          max-width: 400px;
+          line-height: 22px;
+          margin-top: 20px;
+        }
+        a{
+          margin-top: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+// hero area end
+
+// hero inside service area start
+#hero_inside_service{
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0px;
+  .container{
+    .hero_service_box{
+      padding: 20px;
+      transition: all 0.5s;
+      .icon{
+        font-size: 30px;
+        color: $pColor;
+        padding: 15px 0px;
+        display: block;
+      }
+      h3{
+        font-size: 18px;
+        font-weight: 600;
+      }
+      a{
+        text-decoration: none;
+        color: $pColor;
+        font-weight: 600;
+        i{
+          font-size: 12px;
+        }
+      }
+      &:hover{
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.233);
+      }
+    }
+  }
+}
+// hero inside service area end

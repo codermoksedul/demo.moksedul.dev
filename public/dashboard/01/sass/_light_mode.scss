@@ -1,0 +1,231 @@
+$pColor: #425BD6;
+$light_sColor: #fff;
+$swhColor: #DADADA;
+$whColor: #cacace;
+$light_text_color: #0c0d27;
+$light_bgColor: #ffffff;
+$sbgColor: #272a52;
+
+
+
+
+.active_light_mode{
+  background-color: $light_bgColor !important;
+  #menu_area{
+    background-color: $light_bgColor;
+    border-right: 1px solid rgba(0, 0, 0, 0.116);
+    .logo_box{
+      border-bottom: 1px solid rgba(12, 12, 12, 0.082);
+      a{
+        color: $light_text_color;
+      }
+    }
+    #menu_list_box{
+      .title{
+        color: #1C1E3E;
+      }
+      ul{
+        li{
+          a{
+            color: $light_text_color;
+            &:hover{
+              color: $pColor;
+            }
+          }
+          a.active{
+            color: $pColor;
+          }
+        }
+      }
+    }
+  }
+  #interface_area{
+    #top_menu_area{
+      background-color: $light_bgColor;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+      .right_menu_box{
+        button{
+          color: $light_text_color;
+        }
+        .search_box{
+          background-color: $light_sColor;
+          box-shadow: 0 0 15px 0 #00000024;
+          input{
+            color: $light_text_color !important;
+            &::placeholder{
+              color: $light_text_color !important;
+            }
+          }
+          button{
+            color: $light_text_color;
+          }
+        }
+      }
+      .right_menu_area{
+        .notificaton_box{
+          .notification_btn{
+            background-color: $light_sColor;
+            box-shadow: 0 0 10px 0 #00000025;
+            color: $light_text_color;
+          }
+        }
+        .setting_box{
+          .settings_btn{
+            background-color: $light_sColor;
+            box-shadow: 0 0 10px 0 #00000025;
+            color: $light_text_color;
+          }
+        }
+        .profile_box{
+          .profile_btn{
+            color: $light_text_color;
+          }
+        }
+      }
+    }
+    // dashboard area start
+    #dashboard_interface_area{
+      .dashboard_header_area{
+        .title{
+          color: $light_text_color;
+        }
+      }
+      .dashboard_main_layout_box{
+        .dashboard_right_layout{
+          .go_premium_box{
+            background-color: $light_sColor;
+            box-shadow: 0 0 10px 0 #00000025;
+          }
+          .notice_board_box{
+            background-color: $light_sColor;
+            box-shadow: 0 0 10px 0 #00000025;
+            ul{
+              li{
+                a{
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+                  .info{
+                    color: $light_text_color;
+                  }
+                  &:hover{
+                    .info{
+                      color: $whColor;
+                    }
+                  }
+                }
+              }
+              .notice_see_all_button{
+                color: $pColor;
+              }
+            }
+          }
+          .recent_activity_box{
+            background-color: $light_sColor;
+            box-shadow: 0 0 10px 0 #00000025;
+            ul{
+              li{
+                a{
+                  color: $light_text_color;
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+                }
+              }
+              .activity_see_all_button{
+                color: $pColor;
+              }
+            }
+          }
+        }
+        #summery_box_area{
+          .summery_box{
+            background-color: $light_sColor;
+            box-shadow: 0 0 10px 0 #00000025;
+            .icon_box{
+              background-color: $swhColor;
+            }
+            .text_box{
+              .ctgry{
+                color: $light_text_color;
+              }
+              .summury_count{
+                color: $light_text_color;
+              }
+              .parcentage{
+                color: $pColor;
+              }
+            }
+          }
+        }
+        #summery_graph_area{
+          background-color: $light_sColor;
+          box-shadow: 0 0 10px 0 #00000025;
+          .header_summery_graph{
+            .select_box{
+              select{
+                background-color: $light_sColor;
+                color: $light_text_color;
+                box-shadow: 0 0 10px 0 #00000025;
+                border: none;
+              }
+            }
+            .summery_status_box{
+              color: $light_text_color;
+            }
+            .summery_title{
+              color: $light_text_color;
+            }
+          }
+          .summery_counter_box{
+            .counter_txt{
+              color: $light_text_color;
+            }
+          }
+        }
+        #recent_job_applications_box{
+          background-color: $light_sColor;
+          box-shadow: 0 0 10px 0 #00000025;
+          .title{
+            color: $light_text_color;
+          }
+          .timer_select{
+            select{
+              color: $light_text_color;
+              border: 1px solid rgba(0, 0, 0, 0.089);
+              option{
+                background-color: $light_bgColor;
+              }
+            }
+          }
+          .job_applicaton_table_box{
+            table{
+              thead{
+                td{
+                  color: $light_text_color;
+                }
+              }
+              tbody{
+                td{
+                  .categories_box{
+                    .categorie{
+                      color: $light_text_color;
+                    }
+                  }
+                  .vacancies{
+                    color: $light_text_color;
+                  }
+                  .country{
+                    i{
+                      color: $light_text_color;
+                    }
+                    span{
+                      color: $light_text_color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // dashboard area end
+  }
+}

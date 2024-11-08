@@ -1,0 +1,209 @@
+#business_card_area{
+  width: 420px;
+  display: block;
+  margin: auto;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: $bgColor;
+  #footer_box{
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.226);
+    border-radius: 50px 50px 0 0;
+    user-select: none;
+    p{
+      font-size: 1em;
+      font-weight: 500;
+      i{
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+// install pop yp box start
+#install_box{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 1;
+  .share_box_btn{
+    .share_btn{
+      font-size: 20px;
+      border-radius: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border: none;
+      outline: none;
+      color: $whColor;
+      background-color: #02c965;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+  .install_box_btn{
+    .install_btn{
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      border-radius: 4px;
+      padding: 5px;
+      border: none;
+      outline: none;
+      background-color: #02c965;
+      color: $whColor;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+// install pop yp box end
+// install popup box instaruction
+.popup_box{
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  left: 10px;
+  top: 0px;
+  user-select: none;
+  z-index: -1;
+  .close_btn{
+    max-width: 420px;
+    margin: auto;
+    position: absolute;
+    max-width: 420px;
+    top: 0px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .popup_close_btn{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $whColor;
+    color: #000;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    box-shadow: 0 0 10px 0 #00000093;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+      transform: scale(1.2);
+      background-color: red;
+      color: $whColor;
+    }
+  }
+  .install_popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    max-width: 420px;
+    margin: auto;
+    display: none;
+    min-height: 100%;
+    img{
+      height: 100% !important;
+    }
+  }
+  .active_install_popup{
+    display: block !important;
+  }
+}
+.active_popup_box{
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0, 16, 37, 0.562);
+  z-index: 99;
+}
+// share me area start
+#share_me_box{
+  width: 100%;
+  background-color: $whColor;
+  padding: 30px 0px 0px 0px;
+  overflow: hidden;
+  .inner_share_me_box{
+    max-width: 420px;
+    margin: auto;
+  }
+  .title{
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .image_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 300px;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  .button_box{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    button, a{
+      padding: 8px 15px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: #02c965;
+      color: $whColor;
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+    a{
+      background-color: #286090;
+    }
+  }
+}
+// share me area end

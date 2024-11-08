@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    #main_card{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #main_card{
+        width: 100% !important;
+        .contact_info_area{
+            width: 70%;
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    #main_card{
+        width: 100% !important;
+        .contact_info_area{
+            width: 90%;
+        }
+    }
+}

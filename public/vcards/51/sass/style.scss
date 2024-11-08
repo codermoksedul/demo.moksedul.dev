@@ -1,0 +1,29 @@
+$pColor: #189f65;
+$sColor: #ffff;
+$whColor: #fff;
+$bgColor: #000;
+$sColor: #72c695;
+$txtColor: #000;
+
+$pFont: 'Montserrat', sans-sarif;
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: normal;
+    font-family: $pFont;
+    background-color: $bgColor;
+}
+img{
+    max-width: 100%;
+}
+
+// link list style
+@import 'header_area.scss';
+@import 'responsive.scss';

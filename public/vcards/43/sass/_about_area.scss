@@ -1,0 +1,100 @@
+#about_area{
+    padding: 20px 20px;
+    .inner_about_area{
+        hr{
+            width: 95%;
+            margin: 30px auto;
+            margin-bottom: 10px;
+        }
+        span{
+            color: $whColor;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            li{
+                list-style: none;
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    color: $whColor;
+                    transition: all 0.5s;
+                    text-align: left;
+                    line-height: 22px;
+                    font-size: 1rem;
+                    i{
+                        color: $whColor;
+                    }
+                    &:hover{
+                        color: $whColor;
+                    }
+                }
+            }
+        }
+    }
+    .social_information_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        .social_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                row-gap: 10px;
+                li{
+                    list-style: none;
+                    a{
+                        color: $whColor;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100%;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: $pColor;
+                            color: $whColor;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            span{
+                color: $whColor;
+                margin-top: 10px;
+                display: block;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+            }
+        }
+        .qrBox{
+            width: 80px;
+            overflow: hidden;
+            text-align: right;
+        }
+    }
+}

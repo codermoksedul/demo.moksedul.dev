@@ -1,0 +1,188 @@
+#pricing_area{
+    width: 100%;
+    padding: 70px 0px;
+    overflow: hidden;
+    background-color: #F6F4FE;
+    z-index: 0;
+    a{
+        color: $pColor;
+        font-weight: 500;
+    }
+    .time_function{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 0px 30px  0px;
+        .monthly{
+            font-weight: 600;
+            color: #32236F;
+            font-weight: 1rem;
+        }
+        .yearly{
+            font-weight: 600;
+            color: $pColor;
+            font-weight: 1rem;
+        }
+        .discount{
+            background-color: $whColor;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            color: $pColor;
+        }
+    }
+    .time_changer{
+        position: relative;
+        width: 60px;
+        height: 30px;
+        appearance: none;
+        background-color: $whColor;
+        border-radius: 25px;
+        transition: all 0.5s;
+        outline: none;
+        box-shadow: 0 0 10px 0 #0000001e;
+        cursor: pointer;
+        &::after{
+            content: "";
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            background-color: $pColor;
+            border-radius: 100%;
+            box-shadow: 0 0 5px 0 #00000034;
+            left: 5px;
+            top: 4px;
+            transition: all 0.2s;
+            pointer-events: none;
+        }
+    }
+    .time_changer:checked{
+        &::after{
+            left: 55%;
+        }
+    } 
+    .pricing_box_area{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        .pricing_box{
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $whColor;
+            border-radius: 12px;
+            box-shadow: 0 0 10px 0 #00000013;
+            .logo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            .title_box{
+                .title{
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: $pFont;
+                    color: #32236F;
+                    text-align: center;
+                }
+                .subtitle{
+                    font-size: 0.9rem;
+                    display: block;
+                    text-align: center;
+                }
+            }
+            .price{
+                font-size: 3rem;
+                font-weight: 600;
+                color: $pColor;
+                margin: 30px 0px;
+            }
+            .features_list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                li{
+                    list-style: none;
+                    text-align: center;
+                }
+            }
+            a.btn{
+                background-color: $whColor;
+                display: block;
+                margin-top: 40px;
+                padding: 8px 40px;
+                color: $pColor;
+                border: 1px solid $pColor;
+                border-radius: 25px;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.5s;
+                text-transform: uppercase;
+                font-weight: 500;
+                &:hover{
+                    background-color: $pColor;
+                    color: $whColor;
+                }
+            }
+        }
+        .unlimited_box{
+            background-color: $pColor;
+            box-shadow: 0 0 10px 0 #00000013;
+            .title_box{
+                .title{
+                    color: $whColor;
+                }
+                .subtitle{
+                color: $whColor;
+                }
+            }
+            .price{
+                color: $whColor;
+            }
+            .features_list{
+                li{
+                    list-style: none;
+                    text-align: center;
+                    color: $whColor;
+                }
+            }
+            a.btn{
+                background-color: $whColor;
+                color: $pColor;
+                border: 1px solid $pColor;
+                &:hover{
+                    background-color: $pColor;
+                    color: $whColor;
+                    border-color: $whColor;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    #pricing_area{
+        .pricing_box_area{
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #pricing_area{
+        .pricing_box_area{
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

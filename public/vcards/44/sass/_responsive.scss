@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    #main_card{
+        width: 100% !important;
+    }
+    #header_area{
+        .inner_header_area{
+            height: auto !important;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #main_card{
+        width: 100% !important;
+    }
+    #header_area{
+        .inner_header_area{
+            height: auto !important;
+        }
+    }
+}

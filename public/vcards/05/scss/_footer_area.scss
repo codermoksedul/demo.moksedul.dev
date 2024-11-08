@@ -1,0 +1,132 @@
+#footer_area{
+  width:100%;
+  height: 450px;
+  margin-top: 65px;
+  position: relative;
+  .inner_footer_area{
+    position: absolute;
+    left: 0px;
+    border-bottom: 0px;
+    background-image: url(../img/footer-bg.webp);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 100%;
+    bottom: 0px;
+    .footer_social_area{
+      ul{
+        li{
+          background-color: $btnColor;
+          display: inline-block;
+          padding: 7px;
+          border-radius: 100%;
+          transition: all 0.5s;
+          cursor: pointer;
+          position: absolute;
+          &:nth-child(1){
+            left: 5%;
+            top: -25px;
+          }
+          &:nth-child(2){
+            left: 27%;
+            top: -17px;
+          }
+          &:nth-child(3){
+            left: 48%;
+            top: 15px;
+          }
+          &:nth-child(4){
+            left: 65%;
+            top: 75px;
+          }
+          &:nth-child(5){
+            left: 78%;
+            top: 160px;
+          }
+          &:nth-child(6){
+            left: 85%;
+            top: 260px;
+          }
+          a{
+            font-size: 25px;
+            color: $whColor;
+            background-color: $btnColor;
+            padding: 22px;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.438);
+          }
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    .footer_info_area{
+      margin-top: 50px;
+      width: 80%;
+      padding: 10px 30px;
+      img{
+        width: 60px;
+        display: block;
+        margin: auto;
+      }
+      p, span{
+        font-size:15px;
+        color: $whColor;
+        font-weight: $fw_MD;
+        display: block;
+        margin-top: 5px;
+      }
+      a{
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        background-color: $btnColor;
+        color: $whColor;
+        margin-top: 20px;
+        display: block;
+        width: 160px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: $fw_MD;
+      }
+      h4{
+        color: $whColor;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .footer_copyright_area{
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(6, 0, 41);
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    padding: 5px;
+    border-radius: 35px 35px 0 0;
+    user-select: none;
+    i{
+      font-size: 20px;
+      color: #fff;
+      display: inline-block;
+    }
+    span{
+      font-size: 13px;
+      font-weight: $fw_MD;
+      color: $whColor;
+    }
+  }
+  
+}

@@ -1,0 +1,52 @@
+#header_area{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: $bgColor;
+  .inner_header_area{
+    width: 100%;
+    height: 200px;
+    background-color: $pColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .header_logo_box{
+      width: 100%;
+      max-width: 200px;
+      z-index: 1;
+      position: absolute;
+      bottom: -85px;
+      img{
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+  }
+}
+#header_txt_area{
+  margin-top: 80px;
+  padding: 20px;
+  width: 100%;
+  line-height: 1.7em;
+  img{
+    width: 350px;
+    margin: auto;
+    display: block;
+  }
+  h3{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: $fw_MD;
+    text-transform: uppercase;
+  }
+  h5{
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: $pColor;
+  }
+}

@@ -1,0 +1,56 @@
+// info area css here
+#info_area{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 50px 0px;
+    .contact_info{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+            li{
+                padding: 10px;
+                list-style: none;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $txtColor;
+                    font-weight: 500;
+                    transition: all 0.5s;
+                    span{
+                        font-size: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 60px;
+                        background-color: $pColor;
+                        padding: 20px;
+                        color: $whColor;
+                        border-radius: 100%;
+                        margin-bottom: 5px;
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        color: #000fff;
+                        span{
+                            background-color: $whColor;
+                            color: $pColor;
+                            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.342);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

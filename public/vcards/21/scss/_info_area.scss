@@ -1,0 +1,114 @@
+#contact_area{
+  overflow: hidden;
+  .inner_contact_area{
+    padding: 50px 5px;
+    background-color: $bgColor;
+    .social_icon_box{
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 25px;
+        li{
+          a{
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 10px;
+            background-color: $pColor;
+            color: $whColor;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            transition: all 0.5s;
+            &:hover{
+              background-color: $whColor;
+              color: $pColor;
+              box-shadow: 0 03px 10px 0 rgba(0, 0, 0, 0.541);
+            }
+          }
+          &:nth-child(1){
+            a{
+              background-color: red;
+            }
+          }
+        }
+      }
+    }
+    .contact_info_area{
+      margin-top: -25px;
+      ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        text-align: center;
+        padding: 20px;
+        li{
+          a{
+            text-decoration: none;
+            font-size: 1rem;
+            background-color: $pColor;
+            color: $whColor;
+            padding: 12px 0px;
+            border-radius: 50px;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+            font-weight: $fw_MD;
+            margin: auto;
+            &:hover{
+              background-color: $whColor;
+              color: $pColor;
+              box-shadow: 0 03px 10px 0 rgba(0, 0, 0, 0.37);
+            }
+            span{
+              font-size: 20px;
+              margin-right: 10px;
+              width: 30px;
+              height: 30px;;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    .contact_address_area{
+      padding: 20px;
+      width: 100%;
+      overflow: hidden;
+      ul{
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: $fw_SM;
+        text-align: center;
+        line-height: 2rem;
+        li{
+          a{
+            color: $pColor;
+            font-weight: $fw_MD;
+            padding-left: 5px;
+            text-decoration: none;
+            &:hover{
+              color: rgb(36, 156, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

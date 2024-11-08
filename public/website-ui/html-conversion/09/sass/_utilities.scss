@@ -1,0 +1,54 @@
+// color list start
+$pColor: #6A49F2;
+$sColor: #000;
+$bgColor: #ffffff;
+$txtColor: #000;
+$whColor: #ffffff;
+$btnColor: #000;
+$btnHoverColor: #000;
+$linkColor: #000;
+$shadowColor: #0000000c;
+$borderColor: #000;
+$preloaderBG: #000000f8;
+// color list end
+
+// font familly start
+$pFont: 'Poppins', sans-serif;
+$sFont: 'Poppins', sans-serif;
+// font familly end
+
+// container box here
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 10px;
+}
+// heading box
+.heading_box{
+    padding: 30px 0px;
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+        span{
+            color: $pColor;
+        }
+    }
+    p{
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        color: #000000c9;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .heading_box{
+        padding: 30px 0px;
+        h2{
+            font-size: 2.0rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}

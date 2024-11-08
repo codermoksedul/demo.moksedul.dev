@@ -1,0 +1,88 @@
+#interface_area{
+  width: calc(100% - 300px);
+  transition: all 0.5s;
+  // top menu
+  .top_menu_area{
+    width: 100%;
+    height: 60px;
+    padding: 20px 30px 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid #F0F0F0;
+    gap: 10px;
+    .humburger_btn{
+      font-size: 25px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 10px;
+      cursor: pointer;
+      color: $sColor;
+      display: none;
+      transition: all 0.5s;
+      &:hover{
+        color: $pColor;
+      }
+    }
+    .dark_toggler{
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      .fa-moon{
+        color: $sColor;
+      }
+      .fa-sun{
+        color: $whColor;
+      }
+    }
+    .right_menu_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+      .trail_btn{
+        background-color: #FEE6B9;
+        padding: 10px 30px;
+        border-radius: 4px;
+        color: red;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        font-family: $pFont;
+      }
+      .setting_btn{
+        padding: 9px;
+        font-size: 18px;
+        background-color: transparent;
+        color: #262626;
+        text-decoration: none;
+      }
+      .user_profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        img{
+          width: 32px;
+          height: 32px;
+          border-radius: 100%;
+          margin-right: 7px;
+        }
+        text-decoration: none;
+        color: #262626;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        font-style: normal;
+        font-family: $pFont;
+        height: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px){
+    // main layout css here
+    #main_layout{
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #info_area{
+        .contact_info{
+            ul{
+                li{
+                    a{
+                        font-size: 13px;
+                        span{
+                            font-size: 20px;
+                            width: 30px;
+                            height: 30px;
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer_area{
+        .social_connect_area{
+            h3{
+                font-size: 16px;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+        .footer_text_area{
+            padding: 8px;
+            span{
+                font-size: 13px;
+            }
+        }
+    }
+}

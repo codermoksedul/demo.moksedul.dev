@@ -1,0 +1,39 @@
+#header_area{
+  position: relative;
+  .inner_header_area{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/hero_bg.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+  }
+}
+#text_info_area{
+  text-align: right;
+  z-index: 1;
+  margin-top: 210px;
+  width: 100%;
+  padding: 20px;
+  h1{
+    color: $txtColor;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  h4{
+    font-size: 17px;
+    color: $whColor;
+    margin-top: 20px;
+    font-weight: 600;
+    color: $pColor;
+    text-transform: uppercase;
+  }
+}

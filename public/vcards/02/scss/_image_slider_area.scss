@@ -1,0 +1,39 @@
+#image_slider_area{
+    padding: 0px 0px;
+    margin-bottom: 30px;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px 0 #000;
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .swiper-button-next::after {
+      font-size: 15px !important;
+      background: #1010105e;
+      padding: 10px;
+      color: #ffff;
+      border-radius: 2px;
+    }
+    .swiper-button-prev::after {
+      font-size: 15px !important;
+      background: #1010105e;
+      padding: 10px;
+      color: #ffff;
+      border-radius: 2px;
+    }
+  
+  }

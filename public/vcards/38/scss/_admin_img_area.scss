@@ -1,0 +1,54 @@
+#admin_img_area{
+  .inner_admin_img_area{
+    .admin_img{
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    h2{
+      color: #fff;
+      text-align: center;
+      margin-top: 25px;
+    }
+    p{
+      color: #fff;
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .admin_qrcode_img{
+      max-width: 300px;
+      width: 100%;
+      margin: auto;
+      img{
+        width: 100%;
+      }
+      a{
+        text-decoration: none;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 600;
+        background-color: #28A745;
+        padding: 10px 20px;
+        border-radius: 2px;
+        margin: 20px 0px;
+        display: inline-block;
+        margin-right: 5px;
+        &:last-child{
+          background-color: #286090;
+        }
+      }
+    }
+    .brand_img{
+      width: 100%;
+      margin: 20px 0px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

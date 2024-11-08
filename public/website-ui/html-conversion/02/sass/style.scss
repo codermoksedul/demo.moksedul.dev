@@ -1,0 +1,93 @@
+// utilitties area custom css here-----
+@import "utilitties";
+
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    font-family: $pFont;
+    background-color: $bgColor;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px
+}
+.my_btn{
+    background-color: $pColor;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: $whColor;
+    font-weight: 600;
+    padding: 8px 20px;
+    transition: all 0.5s;
+    &:hover{
+        color: $pColor;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.226)
+    }
+}
+.heading_box{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    span{
+        color: $sColor;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 28px;
+        position: relative;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: $pColor;
+            left: 48%;
+            bottom: -2px;
+        }
+    }p{
+        max-width: 600px;
+        margin: auto;
+        font-weight: 500
+    }
+}
+//-----------custom css list here------------
+
+// header area custom css here-----
+@import "header_area";
+
+// about us area custom css here-----
+@import "about_us_area";
+
+// service us area custom css here-----
+@import "service_area";
+
+// projects us area custom css here-----
+@import "project_area";
+
+// footer area custom css here-----
+@import "footer_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// preloader area custom css here-----
+@import "preloader";
+

@@ -1,0 +1,262 @@
+// header area css here
+#header_area{
+    // navbar menu area start
+    #header_navbar_box{
+        background-color: $bgColor;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0 0 10px 0 #f1f1f12d;
+        .navbar-brand{
+            margin-right: 80px;
+            img{
+                width: 100px;
+            }
+        }
+        .mobile_logo{
+            display: none;
+        }
+        .close_menu_box{
+            position: fixed;;
+            width: calc(100% - 300px);
+            background-color: rgba(85, 84, 84, 0.055);
+            min-height: 100vh;
+            right: 0px;
+            top: 0px;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            display: none;
+        }
+        .navbar-toggler{
+            color: $whColor;
+            font-size: 25px;
+            box-shadow: none;
+            border: none;
+            outline: none;
+        }
+        .navbar-collapse{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: start;
+                gap: 35px;
+                li{
+                    position: relative;
+                    a{
+                        padding: 0px;
+                        display: block;
+                        color: $whColor;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: $pFont;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $pColor;
+                            &::after{
+                                width: 50%;
+                            }
+                        }
+                        position: relative;
+                        &::after{
+                            content: "";
+                            width: 0%;
+                            height: 1px;
+                            background-color: #D7D4DA;
+                            position: absolute;
+                            left: 0px;
+                            bottom: 0px;
+                            transition: all 0.5s;
+                        }
+                    }
+                    a.active{
+                        color: $pColor;
+                        font-weight: 600;
+                        &::after{
+                            width: 50%;
+                        }
+                    }
+                    .sub_menu_box{
+                        position: absolute;
+                        min-width: 200px;
+                        background-color: $bgColor;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        left: 0px;
+                        top: calc(100% + 20px);
+                        border-radius: 4px;
+                        gap: 0px !important;
+                        transform-origin: top;
+                        transform: scaleY(0);
+                        transition: all 0.5s;
+                        box-shadow: 0 0 10px 0 #ffffff13;
+                        li{
+                            list-style: none;
+                            border-bottom: 1px solid #ffffff1a;
+                            width: 100%;
+                            a{
+                                text-decoration: none;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                transition: all 0.5s;
+                                padding: 10px;
+                                &:hover{
+                                    background-color: $pColor;
+                                    color: $whColor;
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .sub_menu_box{
+                            transform: scaleY(1);
+                        }
+                    }
+                }
+            }
+            .search_box_area{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                gap: 20px;
+                .search_box{
+                    background-color: transparent;
+                    border: 1.5px solid $pColor;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    height: 40px;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        padding: 0px 20px;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                        color: #ffffffab;
+                        letter-spacing: 1.2px;
+                        &::placeholder{
+                            color: #ffffffab;
+                        }
+                    }
+                    button{
+                        background-color: transparent;
+                        color: #ffffffab;
+                        padding: 0px 10px;
+                        border-radius: 10px;
+                        transition: all 0.5s;
+                    }
+                }
+                .user_box{
+                    button{
+                        background-color: #717078;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        font-size: 15px;
+                        color:$whColor
+                    }
+                }
+                a{
+                    color: $whColor;
+                    height: 40px;
+                    background:linear-gradient(90deg,#58534d, $pColor);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 20px;
+                    border: none;
+                    outline: none;
+                    text-decoration: none;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    // navbar menu area end
+    // hero area start
+    #hero_area{
+        width: 100%;
+        height: 100%;
+        min-height: 700px;
+        background-color: $bgColor;
+        .row{
+            align-items: center;
+        }
+        .hero_info_box{
+            padding:50px 0px 0px 0px;
+            h2{
+                color: $whColor;
+                font-size: 45px;
+                font-weight: 700;
+            }
+            p{
+                color: $whColor;
+                margin: 20px 0px;
+            }
+            .button_box{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                gap: 25px;
+                margin-top: 40px;
+                a{
+                    text-decoration: none;
+                    border: 1.3px solid $pColor;
+                    color: $whColor;
+                    padding: 10px 25px;
+                    transition: all 0.5s;
+                    &:hover{
+                        background: linear-gradient(90deg,#58534d, $pColor);;
+                    }
+                    &:nth-child(2){
+                        background: linear-gradient(90deg,#58534d, $pColor);
+                        transition: all 0.5s;
+                    }
+                }
+            }
+            .counter_box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: $whColor;
+                padding: 80px 0px;
+                max-width: 450px;
+                li{
+                    list-style: none;
+                    .item_box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            font-size: 35px;
+                            font-weight: 600;
+                        }
+                        h5{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // hero area end
+}

@@ -1,0 +1,72 @@
+#contact_form_area{
+  .inner_contact_form_area{
+    margin-top: 10px;
+    border-radius: 20px;
+    .contact_form_box{
+      padding: 50px 10px;
+      border: 3px solid rgba(0, 0, 0, 0.212);
+      border-radius: 20px;
+      h2{
+        text-align: center;
+        color: #000;
+        font-family: $fontFml;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+      p{
+        color: #000;
+        text-align: center;
+        font-family: "Caviar Dreams";
+        margin:  20px 0px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      input{
+        font-size: 17px;
+        font-weight: 500;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $box_shadow_color;
+        outline: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 0px;
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.678);
+        &::placeholder{
+          color: rgba(0, 0, 0, 0.678);
+        }
+        
+      }
+      textarea{
+        margin-top: 10px;
+        width: 100%;
+        height: 100px;
+        background-color: transparent;
+        border-radius: 0px;
+        padding: 10px 20px;
+        outline: none; 
+        color: rgba(0, 0, 0, 0.678);
+        border: none;
+        border-bottom: 1px solid $box_shadow_color;
+        &::placeholder{
+          color: rgba(0, 0, 0, 0.678);
+          font-size: 17px;
+        }
+      }
+      input[type=submit]{
+        font-weight: 700;
+        color: #fff;
+        background-color: #A7A7A7;
+        text-transform: uppercase;
+        font-family: $fontFml;
+        width: 60%;
+        display: block;
+        margin: auto;
+        border: none !important;
+        margin-top: 10px;
+        padding: 15px;
+      }
+    }
+  }
+}

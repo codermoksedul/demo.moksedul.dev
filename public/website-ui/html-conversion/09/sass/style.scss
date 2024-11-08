@@ -1,0 +1,62 @@
+// utilities link here
+@import "utilities.scss";
+
+// body area start
+*, *::after, *::before {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: normal;
+    font-style: normal;
+    font-family: $pFont;
+    background: $bgColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+
+// other page and section style link here
+// header area
+@import "header_area.scss";
+// header area
+@import "header_area.scss";
+
+// features_area
+@import "features_area.scss";
+
+// about_area
+@import "about_area.scss";
+
+// modern_ui_design_area
+@import "modern_ui_design_area.scss";
+
+// works_step_area
+@import "works_step_area.scss";
+
+// testimonial_area
+@import "testimonial_area.scss";
+
+// company_slider
+@import "company_slider.scss";
+
+// pricing_area
+@import "pricing_area.scss";
+
+// pricing_area
+@import "footer_area.scss";
+
+// preloader area
+@import "preloader.scss";
+
+// responsive area
+@import "responsive.scss";
+

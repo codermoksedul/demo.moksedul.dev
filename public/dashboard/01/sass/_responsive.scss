@@ -1,0 +1,289 @@
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #interface_area{
+    width: calc(100% - 85px);
+    .side_menu_collapse_btn{
+      display: none;
+    }
+  }
+
+  .interface_area_hover_menu{
+    width: calc(100% - 300px) !important;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1040px) and (min-width: 993px) {
+  
+  #dashboard_interface_area{
+
+    #summery_box_area{
+      .summury_list_box{
+        .summery_box{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .icon_box{
+            font-size: 20px;
+            padding: 25px;
+            width: 30px;
+            height: 30px;
+          }
+          .text_box{
+            .summury_count{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #menu_area{
+  display: block;
+  position: absolute;
+  left: -350px;
+  }
+  #interface_area{
+    width: 100%;
+    .profile_box{
+      .user_title, i{
+        display: none !important;
+      }
+    }
+    .side_menu_toggler_btn{
+      display: block !important;
+    }
+    .side_menu_collapse_btn{
+      display: none !important;
+    }
+    .menu_close_btn{
+      background-color: rgba(182, 168, 168, 0.062);
+      position: absolute;
+      width: calc(100% - 300px);
+      height: 100vh;
+      z-index: 99;
+      display: block;
+      right: 100%;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      color: $whColor;
+      transition: all 0.2s;
+      
+      i{
+        background-color: $sbgColor;
+        position: absolute;
+        top: 25px;
+        left: -2px;
+        padding: 15px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 02px 02px 0px;
+        cursor: pointer;
+      }
+    }
+    .activeClose_btn{
+      right: 0% !important;
+    }
+  }
+
+
+    // active mobile menu here
+  .active_menu_area{
+    display: block !important;
+    position: absolute; 
+    z-index: 99;
+    left: 0px !important;
+  }
+
+  // header summery box here
+  #dashboard_interface_area{
+    #summery_box_area{
+      .summury_list_box{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+    #interface_area{
+      .dashboard_main_layout_box{
+        grid-template-columns: 1fr !important; 
+      }
+      #top_menu_area{
+        .right_menu_box{
+          .search_box{
+            width: 200px;
+            height: 35px;
+          }
+        }
+        .right_menu_area{
+          gap: 10px;
+          .notificaton_box{
+            .notification_btn{
+              padding: 17px;
+              width: 30px;
+              height: 30px;
+              font-size: 15px !important;
+            }
+          }
+          .setting_box{
+            .settings_btn{
+              padding: 17px;
+              width: 30px;
+              height: 30px;
+              font-size: 15px !important;
+            }
+          }
+          .profile_box{
+            .profile_btn{
+              img{
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  #summery_graph_area{
+    .header_summery_graph{
+      .select_box{
+        select{
+          font-size: 13px !important;
+          padding: 5px 10px !important;
+        }
+      }
+      .summery_status_box{
+        font-size: 13px;
+        .month_box, .last_month_box{
+          i{
+            font-size: 10px !important;
+          }
+        }
+      }
+      .summery_title{
+        font-size: 13px !important;
+      }
+    }
+  }
+  #recent_job_applications_box{
+    .recent_job_application_header{
+      .title{
+        font-size: 16px !important;
+      }
+    }
+    .job_applicaton_table_box{
+      table{
+        thead{
+          td{
+            font-size: 15px !important;
+          }
+        }
+        tbody{
+          .categories_box{
+            .icon{
+              font-size: 17px !important;
+              width: 20px !important;
+              height: 20px !important;
+              padding: 15px !important;
+            }
+            .categorie{
+              font-size: 13px;
+            }
+          }
+          .vacancies{
+            font-size: 13px;
+          }
+          .country{
+            i{
+              font-size: 14px !important;
+            }
+            span{
+              font-size: 13px;
+            }
+          }
+          .edit{
+            button{
+              width: 18px !important;
+              height: 18px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 512px){
+  #dashboard_interface_area{
+    
+  padding: 10px 5px 20px 5px;
+  }
+  #recent_job_applications_box{
+    .recent_job_application_header{
+      .title{
+        font-size: 16px !important;
+      }
+    }
+    .job_applicaton_table_box{
+      table{
+        thead{
+          td{
+            font-size: 14px !important;
+          }
+        }
+        tbody{
+          .categories_box{
+            .icon{
+              font-size: 14px !important;
+              width: 12px !important;
+              height: 12px !important;
+              padding: 12px !important;
+            }
+            .categorie{
+              font-size: 10px;
+            }
+          }
+          .vacancies{
+            font-size: 10px;
+          }
+          .country{
+            i{
+              font-size: 10px !important;
+            }
+            span{
+              font-size: 10px;
+            }
+          }
+          .edit{
+            button{
+              width: 14px !important;
+              height: 14px !important;
+              font-size: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px){
+  #recent_job_applications_box{
+    width: 370px !important;
+    display: block !important;
+    overflow-x: auto !important;
+  }
+}

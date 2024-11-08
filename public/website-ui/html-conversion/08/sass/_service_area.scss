@@ -1,0 +1,37 @@
+#service_area{
+    padding: 0px 0px 50px 0px;
+    overflow: hidden;
+    .service_box{
+        border: 1px solid #ffffff1c;
+        padding: 10px 30px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        transition: all 0.5s;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        .logo{
+            margin: 30px 0px;
+            img{
+                width: 30px;
+            }
+        }
+        h3{
+            font-size: 17px;
+            font-weight: 500;
+            color: #ffffffd8;
+        }
+        p{
+            font-size: 14px;
+            margin-top: 8px;
+            line-height: 20px;
+            color: #ffffff98;
+        }
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.082);
+            transform: scale(1.04);
+        }
+    }
+}

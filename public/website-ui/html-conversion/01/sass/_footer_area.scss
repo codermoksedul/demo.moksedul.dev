@@ -1,0 +1,106 @@
+// footer area css here
+    .footer_header_area{
+        background-color: #0D2B5D;
+        height: 100px;
+        .container{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        }
+        .logo_box{
+            a{
+                img{
+                    width: 180px;
+                }
+            }
+        }
+        .social_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: end;
+            list-style: none;
+            gap: 30px;
+            a{
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: rgba(255, 255, 255, 0.103);
+                display: flex;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                color: $whColor;
+                padding: 20px;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: $pColor;
+                    color: $whColor;
+                }
+            }
+        }
+    }
+#footer_area{
+    background-color: $sColor;
+    width: 100%;
+    padding: 50px 0px;
+    padding-bottom: 0px;
+    .footer_box{
+        margin-top: 30px;
+        .footer_title{
+            color: $whColor;
+            opacity: 0.9;
+        }
+        p{
+            color: $whColor;
+            opacity: 0.7;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+            margin-top: 15px;
+            a{
+                text-decoration: none;
+                color: $whColor;
+                opacity: 0.8;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                gap: 8px;
+                transition: all 0.5s;
+                &:hover{
+                    color: $pColor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .footer_copyright_area{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #94949438;
+        margin-top: 50px;
+        padding-top: 15px;
+        p{
+            color: $whColor;
+            text-align: center;
+            a{
+                text-decoration: none;
+                font-weight: 500;
+                color: $pColor;
+            }
+        }
+    }
+}

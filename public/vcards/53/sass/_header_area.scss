@@ -1,0 +1,509 @@
+#main_card {
+  width: 420px;
+  min-height: 100vh;
+  box-shadow: 0 0 10px 0 #fff;
+  margin: auto;
+  background-color: $whColor;
+}
+#header_area {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $sColor;
+  border: 30px solid $pColor;
+  border-top: none;
+  position: relative;
+  .user_logo {
+    width: 250px;
+    padding: 20px;
+    border-radius: 100%;
+    box-shadow: 0 2px 10px 0 #000000c7;
+    background-color: $sColor;
+    margin-bottom: -200px;
+    overflow: hidden;
+    img {
+      border-radius: 100%;
+    }
+  }
+}
+
+#info_area {
+  width: 100%;
+  padding: 30px 0px;
+  margin-top: 70px;
+  .user_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .title {
+      color: #000;
+      font-size: 25px;
+      margin-top: 15px;
+    }
+    .designation {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $pColor;
+    }
+    .short_description {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+  }
+  .contact_info_area {
+    width: 70%;
+    margin: auto;
+    padding: 30px 0px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 20px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: #000;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          transition: all 0.5s;
+          .icon {
+            width: 30px;
+            height: 30px;
+            background-color: $pColor;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            color: $whColor;
+            transition: all 0.5s;
+          }
+          &:hover {
+            color: $pColor;
+            .icon {
+              background-color: $whColor;
+              color: $pColor;
+              box-shadow: 0 0 7px 0 #0000003d;
+            }
+          }
+        }
+      }
+    }
+  }
+  .social_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 20px;
+        left: -40px;
+        top: 10px;
+        border-radius: 2px 0px;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 20px;
+        right: -40px;
+        top: 10px;
+        border-radius: 0px 2px;
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      list-style: none;
+      li {
+        a {
+          width: 33px;
+          height: 33px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          background-color: $whColor;
+          border-radius: 100%;
+          color: $pColor;
+          transition: all 0.5s;
+          border: 1px solid $pColor;
+          &:hover {
+            background-color: $pColor;
+            transform: rotate(720deg) scale(1.1);
+            color: $whColor;
+          }
+        }
+      }
+    }
+  }
+}
+.footer_area {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $pColor;
+  color: $whColor;
+  border-radius: 50px 50px 0px 0px;
+  border-top: 5px solid $sColor;
+}
+#google_map_area {
+  padding-bottom: 30px;
+  iframe {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+// image slider area start
+#image_slider_area {
+  padding: 10px 0px;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 #000;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .swiper-button-next::after {
+    font-size: 15px !important;
+    background: #1010105e;
+    padding: 10px;
+    color: #ffff;
+    border-radius: 2px;
+  }
+  .swiper-button-prev::after {
+    font-size: 15px !important;
+    background: #1010105e;
+    padding: 10px;
+    color: #ffff;
+    border-radius: 2px;
+  }
+}
+// image slider end
+// video area start
+#video_area {
+  position: relative;
+  width: 96%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  margin: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: 1px solid rgba(7, 7, 7, 0.219);
+  }
+}
+// video area end
+#google_map {
+  padding: 20px 10px;
+  iframe {
+    border-radius: 4px;
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+// install pop yp box start
+#install_box {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 1;
+  .share_box_btn {
+    .share_btn {
+      font-size: 20px;
+      border-radius: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border: none;
+      outline: none;
+      color: $whColor;
+      background-color: #02c965;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .install_box_btn {
+    .install_btn {
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      border-radius: 4px;
+      padding: 5px;
+      border: none;
+      outline: none;
+      background-color: #02c965;
+      color: $whColor;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+// install pop yp box end
+// install popup box instaruction
+.popup_box {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  left: 10px;
+  top: 0px;
+  user-select: none;
+  z-index: -1;
+  .close_btn {
+    max-width: 420px;
+    margin: auto;
+    position: absolute;
+    max-width: 420px;
+    top: 0px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .popup_close_btn {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $whColor;
+    color: #000;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    box-shadow: 0 0 10px 0 #00000093;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.2);
+      background-color: red;
+      color: $whColor;
+    }
+  }
+  .install_popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    max-width: 420px;
+    margin: auto;
+    display: none;
+    min-height: 100%;
+    img {
+      height: 100% !important;
+    }
+  }
+  .active_install_popup {
+    display: block !important;
+  }
+}
+.active_popup_box {
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0, 16, 37, 0.562);
+  z-index: 99;
+}
+// share me area start
+#share_me_box {
+  width: 100%;
+  background-color: $whColor;
+  padding: 30px 0px 0px 0px;
+  overflow: hidden;
+  .inner_share_me_box {
+    max-width: 420px;
+    margin: auto;
+  }
+  .title {
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .image_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 300px;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  .button_box {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    button,
+    a {
+      padding: 8px 15px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: #02c965;
+      color: $whColor;
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+    a {
+      background-color: #286090;
+    }
+  }
+}
+// share me area end
+
+#contact_form_area {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  form {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+    padding: 50px 20px;
+    background-color: $whColor;
+    overflow: hidden;
+    h2 {
+      text-align: center;
+      color: $pColor;
+      margin-bottom: 50px;
+    }
+    label {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.3rem;
+      color: $txtColor;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 15px;
+      display: none;
+    }
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      border-radius: 3px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      font-weight: 500;
+      color: $txtColor;
+      letter-spacing: 0.6px;
+      margin-top: 5px;
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.144);
+      border-radius: 7px;
+      margin-top: 20px;
+      &::placeholder {
+        font-weight: 500;
+      }
+    }
+    textarea {
+      height: 100px;
+    }
+    button {
+      display: block;
+      padding: 15px 20px;
+      font-size: 17px;
+      font-weight: 500;
+      border: none;
+      border-radius: 8px;
+      background-color: $pColor;
+      color: $whColor;
+      margin: auto;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: all 0.5s;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      &:hover {
+        background: $txtColor;
+      }
+    }
+  }
+}

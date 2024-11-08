@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina Lamacchia</title>
+    <!-- favicon icon here -->
+    <link rel="shortcut icon" href="img/user-logo.png" type="image/x-icon">
+    <!-- stylesheet here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/wow-animate.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- main layout here -->
+    <div id="main_layout">
+        <div class="inner_main_layout">
+            <!-- popup box area -->
+            <div id="popup_box">
+                <button title="close window" onclick="popup_close()" class="popup_close_btn">
+                    <i class="fas fa-close"></i>
+                </button>
+                <div class="call_to_action_popup">
+                    <ul>
+                        <li><a href="tel;+1 504-281-4372"><span><i class="fas fa-phone"></i></span>Call</a></li>
+                        <li><a href="contact/Regina.vcf"><span><i class="fas fa-address-card"></i></span>Save Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- header area here -->
+            <header id="header_area">
+                <div class="inner_header_area">
+                    <div class="header_logo_box ">
+                        <div class="img_box wow animate__animated animate__bounceIn">
+                            <img src="img/user-logo.webp" alt="">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div  class="header_info_area wow animate__animated animate__fadeInUp">
+                        <h2>Regina Lamacchia</h2>
+                        <img src="" alt="">
+                        <span></span>
+                    </div>
+                </div>
+            </header>
+            <!-- info area here -->
+            <section id="info_area">
+                <div class="inner_info_area">
+                    <div class="contact_info">
+                        <ul>
+                            <li class="wow animate__animated animate__fadeInRight"><a onclick="call_btn()" ><span><i class="fas fa-phone"></i></span>+1 504-281-4372</a></li>
+                            <li class="wow animate__animated animate__fadeInLeft"><a target="blank" href="mailto:gina@greencoastenterprises.com"><span><i class="fas fa-envelope"></i></span>gina@gmai.com</a></li>
+                            <li class="wow animate__animated animate__fadeInRight"><a target="blank" href="http://www.greencoastenterprises.com"><span><i class="fas fa-globe"></i></span>greencoastenterprises</a></li>
+                            <li class="wow animate__animated animate__fadeInLeft"><a target="blank" href="https://goo.gl/maps/5YMRYh259DJAzSnL8"><span><i class="fas fa-location-dot"></i></span>234 Louisiana, United States</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+        <!-- video area start -->
+        <section class="wow animate__animated animate__fadeInUp" id="video_area">
+            <iframe aut src="https://www.youtube.com/embed/ruSuQfFtKAw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+        <!-- video area end -->
+            <!-- contact form area -->
+            <section id="contact_form_area">
+                <div class="inner_contact_form_area">
+                    <form action="https://formspree.io/f/xzbwowgp" method="post" onsubmit="return false">
+                    <h4 class="wow animate__animated animate__fadeInUp">Contact me</h4>
+                    <label class="wow animate__animated animate__fadeInUp" for="name">Full Name</label>
+                    <input class="wow animate__animated animate__fadeInUp" id="name_input" type="text" name="name" placeholder="Enter your name" required>
+                    <!-- <span class="invalid_name">Enter your name</span> -->
+                    <label class="wow animate__animated animate__fadeInUp" for="email">Email</label>
+                    <input class="wow animate__animated animate__fadeInUp" id="email_input" type="email" name="email" placeholder="Enter your email" required>
+                    <!-- <span class="invalid_email">Enter your email</span> -->
+                    <label class="wow animate__animated animate__fadeInUp" for="phone">Phone</label>
+                    <input class="wow animate__animated animate__fadeInUp" id="phone_input" type="text" name="phone" placeholder="Enter your phone (optional)">
+                    <label class="wow animate__animated animate__fadeInUp" for="message">Message</label>
+                    <textarea class="wow animate__animated animate__fadeInUp" id="message_input" type="text" name="message" placeholder="Enter your message" required></textarea>
+                    <!-- <span class="invalid_message">Enter your message</span> -->
+                    <button class="wow animate__animated animate__fadeInUp form_submit_btn" type="submit" >Send Message <i class="fas fa-angle-right"></i></button>
+                    </form>
+                </div>
+            </section>
+            <!-- google map area here -->
+            <section class="wow animate__animated animate__fadeInUp" id="google_map_area">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.9008781943276!2d-90.07693838456727!3d29.953529629815954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a5e02a4b2885%3A0xd8275b47fbddc741!2s234%20Loyola%20Ave%2C%20New%20Orleans%2C%20LA%2070112%2C%20USA!5e0!3m2!1sen!2sbd!4v1671793859814!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br><br><br>
+            </section>
+
+            <!-- footer area here -->
+            <footer data-aos="fade-in" id="footer_area">
+                <div class="inner_footer_area">
+                    <div class="social_connect_area">
+                        <h3 class="wow animate__animated animate__fadeInUp">Connect with me</h3>
+                        <ul>
+                            <li class="wow animate__animated animate__fadeInLeft"><a target="blank" href="https://facebook.com/greencoastenterprises"><img src="img/social/faceboook.webp" alt=""></a></li>
+                            <li class="wow animate__animated animate__fadeInUp"><a target="blank" href="https://www.instagram.com/gcegram/"><img src="img/social/instagram.webp" alt=""></a></li>
+                            <li class="wow animate__animated animate__fadeInDown"><a target="blank" href="https://twitter.com/GreenCoastE"><img src="img/social/twitter.webp" alt=""></a></li>
+                            <li class="wow animate__animated animate__fadeInUp"><a target="blank" href="https:/tiktok.com"><img src="img/social/tiktok.webp" alt=""></a></li>
+                            <li class="wow animate__animated animate__fadeInRight"><a target="blank" href="https://youtube.com"><img src="img/social/youtube.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text_area wow animate__animated animate__fadeInUp">
+                        <i class="fas fa-hand-pointer"></i>
+                        <span>Click here to get more information</p>
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+
+
+    <!-- share me qr code box start -->
+    <section id="share_me_box">
+        <div class="inner_share_me_box">
+            <h4 class="title wow animate__animated animate__fadeInUp">Scan Me</h4>
+            <div class="image_box wow animate__animated animate__fadeInUp">
+                <img src="img/qr-code.png" alt="">
+            </div>
+            <div class="button_box">
+                <button onclick="window.print()" class="print_btn">Print QR Code</button>
+                <a target="_blank" href="img/qr-code.png" class="download_btn">Download</a>
+            </div>
+            <h4>Share and install my Card 👉</h4>
+        </div>
+    </section>
+    <!-- share me qr code box end -->
+
+
+
+    <!-- javascript here -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/setting.js"></script>
+</body>
+</html>

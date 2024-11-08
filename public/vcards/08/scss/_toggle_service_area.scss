@@ -1,0 +1,39 @@
+#toggle_service_area{
+  width: 100%;
+  padding: 20px 20px;
+  overflow: hidden;
+  .child_toggle_services{
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 10px;
+    button.btn{
+      font-size: 16px;
+      width: 100%;
+      text-align: left;
+      padding: 11px;
+      border: none;
+      font-weight: $fw_MD;
+      cursor: pointer;
+      position: relative;
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.103);
+      border-radius: 4px;
+      i{
+        position: absolute;
+        right: 20px;
+      }
+    }
+    .toggle_information{
+      padding: 20px;
+      line-height: 1.7rem;
+      font-size: 16px;
+      display: none;
+      border: 1px solid rgba(126, 126, 126, 0.219);
+      border-top: 0px;
+    }
+    .toggle_information_active{
+      display: block;
+    }
+  }
+}

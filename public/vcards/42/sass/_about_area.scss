@@ -1,0 +1,76 @@
+#about_area{
+    padding: 20px 50px;
+    .inner_about_area{
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            gap: 20px;
+            li{
+                list-style: none;
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    color: $whColor;
+                    transition: all 0.5s;
+                    text-align: right;
+                    line-height: 22px;
+                    font-size: 1rem;
+                    i{
+                        color: $pColor;
+                    }
+                    &:hover{
+                        color: $pColor;
+                    }
+                }
+            }
+        }
+    }
+    .social_information_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        .social_box{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                li{
+                    list-style: none;
+                    a{
+                        color: $pColor;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100%;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: $pColor;
+                            color: $whColor;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+        .qrBox{
+            width: 80px;
+            overflow: hidden;
+            text-align: right;
+        }
+    }
+}
+

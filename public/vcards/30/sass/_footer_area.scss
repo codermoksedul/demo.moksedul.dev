@@ -1,0 +1,84 @@
+#footer_area{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .social_connect_area{
+        h3{
+            text-align: center;
+            background-color: $pColor;
+            color: $whColor;
+            font-weight: 500;
+            padding: 5px;
+            width: 50%;
+            border-radius: 50px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 5%;
+            padding: 10px 0px;
+            li{
+                a{
+                    font-size: 20px;
+                    background-color: $pColor;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    padding: 25px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: $whColor;
+                    transition: all 0.5s;
+                    i{
+                        border-radius: 100%;
+                        border: 1px solid $whColor;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                        padding: 15px;
+                    }
+                    &:hover{
+                        background-color: $whColor;
+                        color: $pColor;
+                        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.233);
+                        i{
+                            background-color: $pColor;
+                            color: $whColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_text_area{
+        text-align: center;
+        margin-top: 50px;
+        padding: 15px;
+        background-color: $pColor;
+        color: $whColor;
+        border-radius: 50px 50px 0px 0px;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        i{
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+// utilities area custom css here-----
+@import "utilities";
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Public Sans', sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    display: flex;
+    transition: all 0.5s;
+}
+img{
+    max-width: 100%;
+}
+#interface_header_area{
+    background-color: #FAFAFA;
+    height: 100px;
+    padding: 10px;
+    .interface_inner_hader_area{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center
+    }
+    .interface_title{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 46px;
+        color: $sColor
+    }
+    .right_box{
+        border: 1px solid #F0F0F0;
+        border-radius: 4px;
+        height: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 22px;
+        p{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #8C8C8C;
+            a{
+                text-decoration: none;
+                color: $pColor
+            }
+        }
+    }
+}
+//-----------custom css list here------------
+
+
+// menu area custom css here-----
+@import "menu_area";
+
+// interface area custom css here-----
+@import "interface_area";
+
+// team interface area custom css here-----
+@import "team_interface";
+
+// main layout area custom css here-----
+@import "main_layout";
+
+// add_team_user_area custom css here-----
+@import "add_team_user_area";
+
+
+
+
+
+// respinsive custom css here
+@import "responsive";
+
+// dark theme custom css here
+@import "dark_theme";

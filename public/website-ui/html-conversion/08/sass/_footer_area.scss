@@ -1,0 +1,189 @@
+// footer area css here
+#footer_area{
+    padding: 50px 0px 0px 0px;
+    background-color: #020a1e;
+    .footer_about_box{
+        margin-bottom: 20px;
+        a{
+            margin-bottom: 10px;
+            display: block;
+            img{
+                width: 100px;
+            }
+        }
+        p{
+            margin-top: 25px;
+        }
+        .social_box{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: start;
+                gap: 15px;
+                padding: 0px;
+                li{
+                    list-style: none;
+                    a{
+                        width: 35px;
+                        height: 35px;
+                        border: 1px solid #ffffff2f;
+                        border-radius: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $whColor;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: $pColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_company_box{
+        margin-bottom: 30px;
+        ul{
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $whColor;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $pColor;
+                    }
+                }
+            }
+        }
+    }
+    .footer_contact_box{
+        margin-bottom: 30px;
+        span{
+            display: block;
+            margin-top: 20px;
+            font-weight: 400px;
+        }
+        .subscribe_box{
+            height: 40px;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0px;
+            input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                padding: 5px 10px;
+                background-color: #40404D;
+                color: $whColor;
+                &::placeholder{
+                    color: $whColor;
+                    text-transform: capitalize;
+                    letter-spacing: 1.3px;
+                }
+            }
+            button{
+                height: 100%;
+                border: none;
+                outline: none;
+                padding: 5px 10px;
+                background-color: $pColor;
+                color: $whColor;
+            }
+        }
+        ul{
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $whColor;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 10px;
+                    transition: all 0.5s;
+                    span{
+                        margin: 0px;
+                    }
+                    &:hover{
+                        color: $pColor;
+                    }
+                }
+            }
+        }
+    }
+    .footer_copyright_area{
+        margin-top: 50px;
+        padding: 20px 0px 10px 0px;
+        border-top: 1px solid #ffffff34;
+        p{
+            text-align: center;
+            a{
+                text-decoration: none;
+                font-weight: 500;
+                color: $pColor;
+            }
+        }
+    }
+}
+
+#scroll_top_btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: $pColor;
+    color: $whColor;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: all 0.5s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 999;
+    overflow: hidden;
+    border: none;
+    &:hover{
+        opacity: 1;
+        color: $whColor;
+    }
+    i{
+        animation: 2s scroll_btn_animate infinite linear;
+    }
+    @keyframes scroll_btn_animate {
+        from{
+            margin-top: 5px;
+        }
+        to{
+            margin-top: -5px;
+        }
+    }
+}

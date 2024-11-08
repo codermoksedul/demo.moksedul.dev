@@ -1,0 +1,25 @@
+// preloader style here
+#preloader_area{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $preloaderBG;
+    user-select: none;
+    pointer-events: none;
+    z-index: 9999999;
+    .preloadre_box{
+        .preloader_logo{
+            max-width: 60px;
+            animation: 5s prealoder_animate infinite linear;
+        }
+        @keyframes prealoder_animate {
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+    }
+}

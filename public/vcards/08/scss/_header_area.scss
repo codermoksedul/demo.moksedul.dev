@@ -1,0 +1,33 @@
+#header_area{
+  width: 100%;
+  overflow: hidden;
+  height: 450px;
+  background-image: url(../img/header-bg.webp);
+  background-position: top;
+  background-size: cover;
+}
+// user info area css here
+#user_info_area{
+  padding: 15px 20px;
+  width: 90%;
+  margin: auto;
+  border-left: 3px dashed $pColor;
+  h2{
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+  h5{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+// user description css here
+.user_description_area{
+  padding: 20px;
+  margin-top: 10px;
+  p{
+    font-size: 1em;
+    line-height: 1.5rem;
+    color: $txtColor;
+  }
+}

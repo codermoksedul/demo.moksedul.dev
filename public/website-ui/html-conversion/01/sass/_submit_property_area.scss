@@ -1,0 +1,55 @@
+#submit_property_area{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0px;
+    height: 400px;
+    background: linear-gradient(45deg, rgba(0, 12, 51, 0.884), rgba(0, 12, 51, 0.884)), url(../img/best-house-img/02.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    .heading_box{
+        padding-bottom: 10px;
+        h2{
+            color: $whColor;
+        }
+    }
+    .submit_property_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        p{
+            color: $whColor;
+            max-width: 700px;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            li{
+                list-style:none;
+                a{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $whColor;
+                    display: block;
+                    padding: 5px 10px;
+                    background-color: $pColor;
+                    text-decoration: none;
+                    width: 100px;
+                    text-align: center;
+                    transition: all 0.5s;
+                    border-radius: 2px;
+                    &:hover{
+                        color: $pColor;
+                        background-color: $whColor;
+                    }
+                }
+            }
+        }
+    }
+}

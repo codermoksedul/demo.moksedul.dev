@@ -1,0 +1,255 @@
+#dashboard_interface_area{
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: $bgColor;
+  display: block;
+  .title{
+    font-size: 25px;
+    color: $sColor;
+  }
+  .header_box{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .interface_title{
+      font-size: 19px;
+      font-weight: 600;
+    }
+    select{
+      border: none;
+      color: $whColor;
+      background-color: $pColor;
+      padding: 5px 2px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  #transacton_area{
+    width: 57%;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: $whColor;
+    #transaction_box{
+      table{
+        border-collapse: collapse;
+        width: 100%;
+        thead{
+          tr{
+            font-weight: 600;
+          }
+        }
+        tr{
+          height: 60px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+          font-weight: 500;
+          font-size: 15px;
+          .category{
+            color: #fc7100;
+            i{
+              font-size: 12px;
+              margin-right: 5px;
+              animation: 1s category_icon_animate infinite linear;
+              border-radius: 100%;
+            }
+            @keyframes category_icon_animate {
+              0%{
+                box-shadow: 0 0 0 0px #fc7100;
+              }
+              50%{
+                box-shadow: 0 0 0 4px #fc7100;
+              }
+              75%{
+                box-shadow: 0 0 0 7px #fc710059;
+              }
+              100%{
+                box-shadow: 0 0 0 10px #fc710000;
+              }
+            }
+          }
+          .amount{
+            color: #fc7100;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  
+
+  #currency_rate_area{
+    width: 40%;
+    display: inline-block;
+    margin-left: 2%;
+    padding: 0px 10px;
+    background-color: $whColor;
+    border-radius: 10px;
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      thead{
+        tr{
+          font-weight: 600;
+        }
+      }
+      tr{
+        height: 60px;
+        font-weight: 500;
+        font-size: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+        .price{
+          color: $pColor;
+        }
+        .pairs{
+          color: #fc7100;
+        }
+      }
+    }
+  }
+
+  // card area
+  #card_area{
+    width: 100%;
+    padding: 20px 0px;
+    .inner_card_area {
+      width: 100%;
+      display: flex;
+    }
+    .card_box{
+      display: inline-block;
+      width: 40%;
+      img{
+        
+        border-radius: 15px;
+      }
+    }
+    .card_info_box{
+      display: inline-block;
+      width: 57%;
+      border-radius: 12px;
+      background-color: $pColor;
+      padding: 20px;
+      margin-left: 2%;
+      button{
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 22px;
+        color: $pColor;
+        background-color: $whColor;
+        border-radius: 10px;
+        padding: 10px 15px;
+      }
+      h4{
+        font-size: 19px;
+        color: $whColor;
+        margin-top: 15px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+      p{
+        margin-top: 15px;
+        color: $whColor;
+      }
+      a{
+        color: #FF943D;
+        text-decoration: none;
+        margin-top: 10px;
+        display: block;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // subscription area
+  #subscription_area{
+    overflow: hidden;
+    padding: 20px 0px;
+    .inner_subscription_area{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .subscription_box{
+      padding: 20px;
+      border-radius: 10px;
+      background-color: $whColor;
+      .logo_box{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        .logo{
+          i{
+            font-size: 45px;
+            background-color: $pColor;
+            padding: 20px;
+            border-radius: 10px;
+            color: $whColor;
+            text-align: center;
+          }
+        }
+        .info{
+          .title{
+            font-size: 19px;
+            font-weight: 700;
+            color: $pColor;
+            margin-bottom: -15px;
+          }
+          span{
+            a{
+              font-size: 16px;
+              font-weight: 600;
+              text-decoration: none;
+              color: $pColor;
+            }
+          }
+        }
+      }
+      
+      h5{
+        font-size: 15px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: $pColor;
+      }
+      .button_box{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      a.btn{
+        padding: 7px 15px;
+        border-radius: 5px;
+        background-color: $pColor;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: $whColor;
+        &:nth-child(2){
+          background-color: #fc7100;
+        }
+      }
+      }
+    }
+  }
+}
+.dashboard_interface_area_active{
+  display: block !important;
+}

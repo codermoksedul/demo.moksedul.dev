@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QR Code Generator | Moksedul Islam</title>
+  <!-- google link -->
+    <meta name="google-site-verification" content="JRh0x9A4w4j1inpEp9or-2ytL4ZNdLBYqt2357GGP1A" />
+    <meta name="description" content="dmoksedul, moksedul, wordpress expert, web developer, website designer, website designer in rangpur, professional web developer, react developer.">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script src="js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body oncontextmenu="return false">
+    <section id="main_box">
+        <h1 class="headingTitle">QR Code Generator</h1>
+        <div class="inner_main_box">
+            <div class="info_area">
+                <form onsubmit="return false">
+                    <div class="user_box">
+                        <label for="link-input">Enter your link</label>
+                        <input type="text" id="link-input" value="https://moksedul.dev/" placeholder="https://www.example.com" required>
+                    </div>
+                    <div class="color_box">
+                        <div class="bg_box">
+                            <label for="">background color</label>
+                            <input type="color" id="background-color-input" value="#ffffff">
+                        </div>
+                        <div class="text_color_box">
+                            <label for="">color</label>
+                            <input type="color" id="color-input" value="#000000">
+                        </div>
+                    </div>
+                    <button type="submit" id="generate-button">Generate QR Code</button>
+                  </form>
+            </div>
+            <div class="qrCode_area">
+                <div id="qrcode-container"></div>
+            </div>
+        </div>
+    </section>
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+#header_area{
+  padding: 50px 0px;
+  background-image: url(../img/header-bg.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  max-height: 450px;
+  // background: #000;
+  // border-radius: 0px 0px 150px 80%;
+  width: 100%;
+  .inner_header_area{
+    .header_title{
+      img{
+        width: 50px;
+        margin: auto;
+        display: block;
+      }
+      h3{
+        color: $whColor;
+        font-weight: $fw_SM;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        text-align: center;
+        margin-top: 15px;
+        text-transform: uppercase;
+      }
+    }
+    .logo_box{
+      margin-top: 140px;
+      width: 250px;
+      margin: auto;
+      img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        border: 5px solid $whColor;
+        border-radius: 100%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.411);
+      }
+    }
+    .info_box{
+      margin-top: 30px;
+      h1{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$pColor: #E0AD3F;
+$sColor: #000;
+$whColor: #fff;
+$bgColor: #000d13fb;
+$txtColor: #000;
+
+$pFont: 'Poppins', sans-sarif;
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: normal;
+    font-family: $pFont;
+    background-color: $bgColor;
+}
+img{
+    max-width: 100%;
+}
+
+// link list style
+@import 'header_area.scss';
+@import 'about_area.scss';
+@import 'responsive.scss';

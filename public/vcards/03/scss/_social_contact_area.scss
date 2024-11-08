@@ -1,0 +1,44 @@
+#social_contact_area{
+  overflow: hidden;
+  margin-top: 30px;
+  h3{
+    color: $pColor;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $pColor;
+    padding: 20px 0px;
+    li{
+      width: 100%;
+      max-width: 50px;
+      display: inline-block;
+      text-align: center;
+      margin: 0% 1%;
+      position: relative;
+      a{
+        background-color: $whColor;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        color: $pColor;
+        text-decoration: none;
+        font-size: 25px;
+        transition: all 0.5s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

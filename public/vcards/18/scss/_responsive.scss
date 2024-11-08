@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px){
+  #social_contact_area{
+    height: 170px;
+  }
+  .share_whatsapp_area{
+    a{
+      font-size: 15px !important;
+    }
+    input{
+      font-size: 15px !important;
+    }
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 540px){
+  #business_card_area{
+    width: 100%;
+  }
+  #footer_area{
+    position: fixed !important;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 668px){
+  #footer_area{
+    position: fixed !important;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 540px){
+  #business_card_area{
+    width: 100%;
+  }
+  #footer_area{
+    position: fixed !important;
+    bottom: 0px;
+    left: 0px;
+  }
+  #user_info_area{
+    h2{
+      font-size: 35px;
+    }
+    h5{
+      font-size: 15px;
+    }
+    .contact_info_area
+    ul{
+      li{
+        a{
+          font-size: 17px !important;
+          span{
+            font-size: 20px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    .add_contact_area{
+      li{
+        a{
+          font-size: 18px;
+        }
+      }
+    }
+    .share_whatsapp_area{
+      input{
+        font-size: 13px;
+        padding: 10px;
+      }
+      a{
+        font-size: 12px;
+      }
+    }
+  }
+  .contact_info{
+    ul{
+      li{
+        a{
+          font-size: 18px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+  #footer_area{
+    ul{
+      li{
+        a{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  
+}

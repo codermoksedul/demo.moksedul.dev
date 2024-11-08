@@ -1,0 +1,46 @@
+#contact_area{
+  .inner_contact_area{
+    padding: 20px 5px;
+    .contact_link_box{
+      overflow: hidden;
+      li{
+        padding: 2px 20px;
+        margin: auto;
+        border-radius: 2px;
+        list-style: none;
+        transition: all 0.5s;
+        width: 85%;
+        color: $whColor;
+        transition: all 0.5s;
+        a{
+          font-size: 20px;
+          font-weight: 400;
+          color: $pColor;
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: 600;
+          &:hover{
+            color: #00e1ff;
+            span{
+              color: #00e1ff;
+            }
+          }
+        }
+        span{
+          color: $pColor;
+          font-size: 25px;
+          padding: 25px;
+          border-radius: 100%;
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

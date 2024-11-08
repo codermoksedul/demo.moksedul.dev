@@ -1,0 +1,24 @@
+.collapse_menu{
+  width: 85px !important;
+  .brand_name{
+    display: none !important;
+  }
+  .user_box{
+    .user_title{
+      display: none !important;
+    }
+    .user_job_title{
+      display: none !important;
+    }
+  }
+  #item_box{
+    li{
+      span{
+        display: none !important;
+      }
+    }
+  }
+}
+.main_layout_area_collapse{
+  width: calc(100% - 85px) !important;
+}

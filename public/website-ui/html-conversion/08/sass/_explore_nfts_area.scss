@@ -1,0 +1,231 @@
+#explore_nfts_area{
+    padding: 50px 0px;
+    .tab_box_area{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .tab_toggle_button{
+            display: none;
+        }
+        .category_button_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            button{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: $whColor;
+                border: 1px solid rgba(219, 219, 219, 0.192);
+                border-radius: 4px;
+                height: 50px;
+                padding: 0px 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: #ffffff25;
+                }
+            }
+            .active{
+                background-color: #ffffff25;
+            }
+        }
+        .short_box{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: $whColor;
+                border: 1px solid rgba(219, 219, 219, 0.192);
+                border-radius: 4px;
+                height: 50px;
+                padding: 0px 10px 0 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                transition: all 0.5s;
+                position: relative;
+                &:hover{
+                    background-color: #ffffff25;
+                }
+                select{
+                    background-color: transparent;
+                    color: $whColor;
+                    border: none;
+                    outline: none;
+                    right: 0px;
+                    height: 100%;
+                    padding-right: 5px;
+                    cursor: pointer;
+                    option{
+                        background-color: $bgColor;
+                    }
+                }
+        }
+    }
+    .button_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+        .load_more_btn{
+            height: 50px;
+            border: 1.4px solid #ffffff38;
+            border-radius: 4px;
+            padding: 0px 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: $whColor;
+            font-weight: 400;
+            background-color: transparent;
+            .load_more_img{
+                width: 25px;
+                display: none;
+                animation: 6s loadmore_animate infinite linear;
+            }
+            @keyframes loadmore_animate {
+                to{
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+    }
+    .main_service_box{
+        background-color: #00000056;
+        padding: 20px 20px 0px 20px;
+        border-radius: 10px;
+        border: 1px solid #ffffff34;
+        overflow: hidden;
+        margin-top: 20px;
+        .header_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 0px 20px 0px;
+            .user_box{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                gap: 10px;
+                .logo_box{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                    }
+                }
+                .user_name_box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 0px;
+                    span{
+                        font-size: 13px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $whColor;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .react_box{
+                button{
+                    background-color: #ffffff3a;
+                    padding: 3px 7px;
+                    border-radius: 4px;
+                    color: $whColor;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .thumbnail_box{
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            height: 240px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .information_box{
+            padding: 20px 0px;
+            .headign_box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .title{
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                button{
+                    background-color: transparent;
+                    color: $whColor;
+                    padding: 0px;
+                    border: none;
+                    outline: none;
+                    font-size: 17px;
+                }
+            }
+            .footer_box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px 0px 0px 0px ;
+                .time_box{
+                    .time_title_box{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 3px;
+                        font-size: 10px;
+                        span{
+                            font-size: 10px;
+                        }
+                    }
+                    .time_coun{
+                        span{
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .height_bit_box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: end;
+                    span{
+                        font-size: 10px;
+                    }
+                    .height_bit_count{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

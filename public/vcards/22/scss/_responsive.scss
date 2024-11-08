@@ -1,0 +1,80 @@
+@media screen and (min-width: 768px){
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+  #header_txt_area{
+    h1{
+      font-size: 22px !important;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  #business_card_area{
+    width: 100%;
+  }
+  
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 540px){
+  #business_card_area{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 375px){
+  #business_card_area{
+    width: 100%;
+  }
+  #header_txt_area{
+    h1{
+      font-size: 20px !important;
+    }
+    h3{
+      font-size: 14px !important;
+    }
+  }
+  .nav_top_area{
+    h3{
+      font-size: 17px !important;
+    }
+  }
+  #contact_with_me_area{
+    ul{
+      width: 95%;
+    }
+  }
+  #service_area{
+    ul{
+      gap: 10px;
+      li{
+        height: 80px;
+        a{
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+  #contact_with_me_area{
+    h3{
+      font-size: 15px;
+    }
+    ul{
+      li{
+        a{
+          font-size: 14px;
+          span{
+            font-size: 22px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+// responsive website css here
+
+@media screen and (max-width: 1200px) {
+  
+}
+
+@media screen and (max-width: 992px) {
+    .header_top_menu{
+        .inner_header_top_menu{
+            flex-direction: column !important;
+        }
+    }
+    .header_search_box{
+        display: none
+    }
+    .active_mobile_search{
+        display: block;
+        margin-top: 20px;
+    }
+    #header_area #header_primary_menu .navbar-collapse {
+        flex-grow: 0;
+        position: fixed;
+        background: #07153a;
+        width: 300px;
+        left: 0px;
+        padding: 20px;
+        min-height: 100vh;
+        top: 0px;
+        display: none;
+    }
+    #header_area #header_primary_menu .header_search_box {
+        position: absolute;
+        top: 40vh;
+        left: 30px;
+    }
+    .navbar_close_btn_active{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service_box{
+        margin-top: 20px;
+    }
+    #moder_house_video{
+        h2{
+            font-size: 30px !important;
+        }
+        p{
+            font-size: 14px !important;
+        }
+    }
+  .service_logo{
+    margin-top: 0px !important;
+  }
+  #hero_area{
+    h2{
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    .hero_category_search_box{
+        select{
+            width:80px !important;
+            padding: 3px 5px !important;
+            font-size: 14px !important;
+        }
+        button{
+            padding: 3px 8px !important;
+            i{
+                font-size: 12px !important;
+            }
+            span{
+            font-size: 14px !important;
+            }
+        }
+    }
+  }
+  .heading_box{
+    .subtitle_heading{
+        font-size: 14px !important;
+    }
+    .title_heading{
+        font-size: 30px !important;
+    }
+}
+}
+
+@media screen and (max-width: 420px) {
+    #hero_area{
+        h2{
+            font-size: 25px !important;
+            line-height: 30px !important;
+        }
+        button{
+            span{
+                display: none !important;
+            }
+        }
+      }
+      #moder_house_video{
+        h2{
+            font-size: 25px !important;
+        }
+    }
+}

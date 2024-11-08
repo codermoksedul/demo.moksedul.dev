@@ -1,0 +1,274 @@
+// main layout area css here
+#main_layout_area{
+  width: calc(100% - 300px);
+  min-height: 100vh;
+  background-color: $bgColor;
+  .top_area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $whColor;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.185);
+    padding: 20px;
+    padding-right: 30px;
+    .humburger_btn{
+      border: none;
+      outline: none;
+      font-size: 25px;
+      color: $sColor;
+      cursor: pointer;
+      background-color: transparent;
+      display: none;
+    }
+  .search_box{
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    padding: 7px 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #eff0f2;
+    i{
+      font-size: 14px;
+      color: #7a818f;
+    }
+    input{
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 0 10px;
+      background-color: transparent;
+      color: #7a818f;
+      &::placeholder{
+        color: #7a818f;
+      }
+    }
+  }
+    .right_top_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 15px;
+      .notification_box{
+        position: relative;
+        button{
+          font-size: 20px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          color: $sColor;
+          background-color: transparent;
+          &:hover{
+            color: $pColor;
+          }
+        }
+        .notification_popup_box{
+          width: 300px;
+          min-height: 400px;
+          height: auto;
+          max-height: 600px;
+          border-radius: 7px;
+          background-color: $whColor;
+          box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.164);
+          position: absolute;
+          right: -30px;
+          top: 30px;
+          display: none;
+          padding: 10px;
+          z-index: 2;
+          overflow: hidden;
+          .ntb_topbar{
+            width: 100%; 
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            span{
+              font-size: 14px;
+              font-weight: 500;
+            }
+            .ntb_read_btn{
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              outline: none;
+              color: $pColor;
+              cursor: pointer;
+              transition: all 0.5s;
+              &:hover{
+                color: red;
+              }
+            }
+          }
+        }
+        .ntb_active{
+          display: block !important;
+        }
+        .notification_list_box{
+          ul{
+            li{
+              list-style: none;
+              a{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                text-decoration: none;
+                padding: 10px 5px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+                gap: 10px;
+                transition: all 0.5s;
+                border-radius: 4px;
+                img{
+                  width: 46px;
+                  height: 46px;
+                }
+                .ntb_info_box{
+                  .title{
+                    font-size: 17px;
+                    font-weight: 600;
+                    display: block;
+                    color: $pColor;
+                  }
+                  p{
+                    font-size: 13px;
+                    line-height: 14px;
+                    color: $sColor;
+                  }
+                }
+                &:hover{
+                  background-color: $pColor;
+                  .title{
+                    color: $whColor ;
+                  }
+                  p{
+                    color: $whColor ;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .profile_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .profile_btn{
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .user_logo{
+          width: 35px;
+          margin-right: 5px;
+        }
+        .user_title{
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: $sColor;
+        }
+        i{
+          margin-left: 5px;
+          font-size: 15px;
+          color: $sColor;
+        }
+        #profile_popup_box{
+          width: 300px;
+          height: auto;
+          min-height: 400px;
+          background-color: $whColor;
+          position: absolute;
+          top: 40px;
+          right: 0px;
+          border-radius: 7px;
+          box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.158);
+          padding: 20px;
+          display: none;
+          z-index: 2;
+          .pt_box{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px;
+            img{
+              width: 70px;
+            }
+            a{
+              font-size: 20px;
+              text-decoration: none;
+              font-weight: 500;
+              color: $pColor;
+            }
+          }
+          ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: left;
+            gap: 10px;
+            margin-top: 20px;
+            li{
+              list-style: none;
+              a{
+                font-size: 16px;
+                width: 100%;
+                display: block;
+                border-radius: 3px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                gap: 10px;
+                transition: all 0.5s;
+                padding: 10px;
+                i{
+                  display: inline
+                }
+                &:hover{
+                  background-color: rgba(2, 2, 2, 0.219);
+                }
+              }
+            }
+          }
+        }
+        .active{
+          display: block !important
+        }
+      }
+      .profile_pop_up_close_btn{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0;
+        border: none;
+        outline: none;
+        z-index: 1;
+        opacity: 0;
+        display: none;
+      }
+      .profile_popup_close_active{
+        display: block !important;
+      }
+    }
+  }
+}

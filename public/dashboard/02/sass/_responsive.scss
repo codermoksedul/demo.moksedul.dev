@@ -1,0 +1,155 @@
+// responsive website css here
+
+@media screen and (max-width: 1200px) {
+  
+  #subscription_area{
+    .inner_subscription_area{
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  #menu_area{
+    width: 85px;
+    .brand_name{
+      font-size: 13px;
+      display: none;
+    }
+    .user_box{
+      .user_title, .user_job_title{
+        display: none;
+      }
+    }
+    #item_box{
+      li{
+        text-align: center !important;
+        span{
+          display: none !important;
+        }
+      }
+    }
+  }
+  .profile_box{
+    .user_title{
+      display: none;
+    }
+    i{
+      display: none;
+    }
+  }
+  #main_layout_area{
+    background-color: red;
+    width: calc(100% - 85px);
+  }
+  #dashboard_interface_area{
+    #transacton_area, #currency_rate_area{
+      display: block;
+      width: 100%;
+      right: -33px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  #subscription_area{
+    .inner_subscription_area{
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  #dashboard_interface_area{
+    #transacton_area, #currency_rate_area{
+      display: block;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .profile_box{
+    .user_title{
+      display: none;
+    }
+    i{
+      display: none;
+    }
+  }
+  
+  #menu_area{
+    position: absolute;
+    left: -999px;
+    height: 100%;
+    transition: all 0.5s;
+    .menu_close_btn{
+      position: absolute;
+      font-size: 25px;
+      top: 10px;
+      right: -33px;
+      padding: 03px 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: $pColor;
+      color: $whColor;
+      cursor: pointer;
+      transition: all 0.5s;
+      display: block;
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+  .menu_active{
+    left: 0px !important;
+  }
+  #main_layout_area{
+    width: 100% !important;
+    .humburger_btn{
+      display: block !important;
+    }
+    .search_box{
+      width: 150px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      padding: 0px !important;
+      i{
+        margin-left: 10px;
+      }
+    }
+  }
+
+    #card_area{
+      .inner_card_area{
+        display: block !important;
+      }
+      .card_box{
+        width: 100% !important;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .card_info_box{
+        width: 100% !important;
+        display: block !important;
+        margin: 0px !important;
+      }
+    }
+    #subscription_area{
+      .inner_subscription_area{
+        grid-template-columns: 1fr !important;
+      }
+    }
+    #transaction_box{
+      table{
+        tr{
+          font-size: 12px !important;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 420px) {
+  
+}

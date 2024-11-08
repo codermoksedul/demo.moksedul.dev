@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word & Letter Counter | Moksedul Islam</title>
+    <!-- google link -->
+    <meta name="google-site-verification" content="JRh0x9A4w4j1inpEp9or-2ytL4ZNdLBYqt2357GGP1A" />
+    <meta name="description" content="dmoksedul, moksedul, wordpress expert, web developer, website designer, website designer in rangpur, professional web developer, react developer.">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body oncontextmenu="return false">
+    
+    <section id="main_box">
+        <h1 class="heading_title">Word & Letter Counter</h1>
+        <div class="inner_main_box">
+            <form id="form" onsubmit="return false">
+                <textarea id="text" name="text" rows="5" cols="30" placeholder="Enter your text here"></textarea>
+                <div class="function_box">
+                    <div class="func_checkBox">
+                        <label for="removeSpace">
+                        <input type="checkbox" id="removeSpace" name="removeSpace" value="removeSpace">Remove Spaces</label>
+                        <label for="removePunctuation">
+                            <button class="more_option_btn"><i class="more_btn_icon fas fa-angle-down"></i></button>
+                        <div class="more_func">
+                            <input type="checkbox" id="removePunctuation" name="removePunctuation" value="removePunctuation" checked>Punctuation<label>
+                            <label for="removeNumber">
+                            <input type="checkbox" id="removeNumber" name="removeNumber" value="removeNumber" checked>Numbers</label>
+                        </div>
+                    </div>
+
+                    <button type="button" id="reset">Reset</button>
+                </div>
+              </form>
+              <div id="output"></div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

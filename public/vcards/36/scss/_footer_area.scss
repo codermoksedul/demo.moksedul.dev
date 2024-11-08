@@ -1,0 +1,41 @@
+#footer_area{
+  .inner_footer_area{
+    text-align: center;
+    background-color: $whColor;
+    padding: 20px 0px;
+    .qrcode_box{
+      margin: auto;
+      span{
+        display: block;
+        margin-top: 10px;
+        font-size: 17px;
+        font-family: "Caviar Dreams", Sans-serif;
+        font-weight: 600;
+      }
+      img{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 200px;
+      }
+      button, a{
+        font-size: 16px;
+        font-weight:600;
+        color: $whColor;
+        padding: 8px 15px;
+        margin: 5px;
+        border: none;
+        background-color: #28a745;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+      
+      p{
+        margin-top: 10px;
+        display: block;
+        font-weight: 600;
+      }
+    }
+  }
+}

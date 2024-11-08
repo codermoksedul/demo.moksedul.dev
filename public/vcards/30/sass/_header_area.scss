@@ -1,0 +1,61 @@
+#header_area{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .header_logo_box{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        padding: 100px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/logo-bg.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        .img_box{
+            width: 50%;
+            border: 5px solid transparent;
+            border-radius: 100%;
+            position: relative;
+            display: block;
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
+            padding: 1.3%;
+            margin-top: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                width: 110%;
+                height: 50%;
+                background-color: $whColor;
+                position: absolute;
+                animation: 3s header_logo_animate infinite linear;
+                z-index: -1;
+            }
+        }
+        
+        @keyframes header_logo_animate {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    }
+    .header_info_area{
+        margin-top: -50px;
+        img{
+            width: 70%;
+            display: block;
+            margin: auto;
+        }
+        span{
+            font-size: 20px;
+            text-align: center;
+            display: block;
+        }
+    }
+}

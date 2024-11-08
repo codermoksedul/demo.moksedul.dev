@@ -1,0 +1,85 @@
+// header area css here
+#header_area{
+  background-image: url(../img/header-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar{
+    padding: 30px 0px !important;
+    .navbar-brand{
+      color: $whColor;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .navbar-toggler{
+      background-color: $whColor;
+      border-radius: 100%;
+      padding: 10px 11px;
+      color: $pColor;
+      border: none;
+      outline: none;
+    }
+    #navbar_menu{
+      ul{
+        gap: 30px;
+        li{
+          a{
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgb(221, 221, 221);
+            padding: 2px 0px;
+            transition: all 0.5s;
+            &:hover{
+            color: $whColor;
+            border-bottom: 2px solid $whColor;
+            }
+          }
+          a.active{
+            color: $whColor;
+            border-bottom: 2px solid $whColor;
+          }
+        }
+      }
+    }
+  }
+
+
+  // hero area start
+
+  #hero_area{
+    width: 100%;
+    .inner_hero_area{
+      .row{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        .hero_info{
+          h2{
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 2px;
+          }
+          p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+            margin: 20px 0px;
+          }
+          a{
+            margin-top: 20px;
+          }
+        }
+      }
+
+    }
+  }
+  // hero area end
+}

@@ -1,0 +1,46 @@
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+
+//-----------custom css list here------------
+// utilitties area custom css here-----
+@import "utilitties";
+
+// menu area custom css here-----
+@import "menu_area";
+
+// main layout area custom css here-----
+@import "main_layout_area";
+
+// dashboard_interface_area custom css here-----
+@import "dashboard_interface_area";
+
+// transaction custom css here-----
+@import "transaction_interface";
+
+// currency_rate_interface custom css here-----
+@import "currency_rate_interface";
+
+// // dashboard_interface_area custom css here-----
+// @import "currency_rate_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// collapse menu area custom css here-----
+@import "collapse_menu";

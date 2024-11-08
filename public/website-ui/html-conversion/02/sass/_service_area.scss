@@ -1,0 +1,40 @@
+#service_area{
+  .inner_service_area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .service_box{
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+      gap: 10px;
+      .logo{
+        width: 50px;
+      }
+      h3{
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p{
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: -10px;
+      }
+      
+      &:hover{
+        background-color: $pColor;
+        h3{
+          color: $whColor;
+        }
+        p{
+          color: $whColor;
+        }
+      }
+    }
+  }
+}

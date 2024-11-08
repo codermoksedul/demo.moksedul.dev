@@ -1,0 +1,38 @@
+#service_area{
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    li{
+      background-color: $pColor;
+      padding: 10px;
+      border-radius: 10px;
+      list-style: none;
+      text-align: center;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+      a{
+        font-size: 16px;
+        text-decoration: none;
+        color: $whColor;
+        transition: all 0.5s;
+        font-weight: $fw_MD;
+      }
+      &:hover{
+        background-color: $whColor;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.329);
+        transform: scale(1.1);
+        a{
+          color: $pColor;
+        }
+      }
+    }
+  }
+}

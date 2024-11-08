@@ -1,0 +1,75 @@
+// responsive website css here
+
+@media screen and (max-width: 1200px) {
+  #hero_area{
+    #hero_slider{
+      .carousel-caption{
+        text-align: center !important;
+        p{
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+  #header_area{
+    .top_header_area{
+      height: auto !important;
+      padding: 10px;
+      .container{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+      }
+    }
+    #menu_area{
+      background-color: $whColor;
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      height: auto;
+      top: 80px;
+      left: 0px;
+      padding: 30px 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.233);
+      ul{
+        li{
+          display: inline-grid !important;
+        }
+      }
+    }
+  }
+  #contact_area{
+    .inner_contact_area{
+      flex-direction: column;
+      gap: 50px;
+      justify-content: start;
+      align-items: start;
+    }
+  }
+  #blog_area{
+    .card{
+      .card-img-top{
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #coustomer_review_area{
+    .inner_coustomer_review_area{
+      ul{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+      }
+    }
+  }
+}

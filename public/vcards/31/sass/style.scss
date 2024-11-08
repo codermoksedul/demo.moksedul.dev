@@ -1,0 +1,50 @@
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    background-color: #000;
+}
+img{
+    max-width: 100%;
+}
+a, button{
+    cursor: pointer;
+}
+
+
+// other custom css link here
+
+// utilities css here
+@import "utilities";
+
+// main layout size css here
+@import "main_layout_area";
+
+// header_area size css here
+@import "header_area";
+
+// info_area size css here
+@import "info_area";
+
+// contact form area css here
+@import "contact_form_area";
+
+// google_map_area area css here
+@import "google_map_area";
+
+// footer_area css here
+@import "footer_area";
+
+// popup_box css here
+@import "popup_box";
+
+// responsive css here
+@import "responsive";

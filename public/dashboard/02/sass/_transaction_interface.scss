@@ -1,0 +1,85 @@
+#transacton_interface{
+    width: 100%;
+    display: block;
+    padding: 20px;
+    display: block;
+    .inner_transacton_interface{
+        border-radius: 10px;
+        background-color: $whColor;
+        padding: 0px 10px;
+    }
+    .title{
+        font-size: 25px;
+        color: $sColor;
+      }
+      .header_box{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .interface_title{
+          font-size: 19px;
+          font-weight: 600;
+        }
+        select{
+          border: none;
+          color: $whColor;
+          background-color: $pColor;
+          padding: 5px 2px;
+          border-radius: 4px;
+          font-size: 13px;
+          font-weight: 600;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    #transaction_box{
+      table{
+        border-collapse: collapse;
+        width: 100%;
+        thead{
+          tr{
+            font-weight: 600;
+          }
+        }
+        tr{
+          height: 60px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+          font-weight: 500;
+          font-size: 15px;
+          .category{
+            color: #fc7100;
+            i{
+              font-size: 12px;
+              margin-right: 5px;
+              animation: 1s category_icon_animate infinite linear;
+              border-radius: 100%;
+            }
+            @keyframes category_icon_animate {
+              0%{
+                box-shadow: 0 0 0 0px #fc7100;
+              }
+              50%{
+                box-shadow: 0 0 0 4px #fc7100;
+              }
+              75%{
+                box-shadow: 0 0 0 7px #fc710059;
+              }
+              100%{
+                box-shadow: 0 0 0 10px #fc710000;
+              }
+            }
+          }
+          .amount{
+            color: #fc7100;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+}
+.transacton_interface_active{
+    display: block !important;
+}

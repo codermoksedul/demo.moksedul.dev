@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Create Function JavaScript</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <form id="userForm">
+        <h3>Create User Account</h3>
+        <input
+          type="text"
+          placeholder="Full Name"
+          name="name"
+          id="fName"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Job Title"
+          name="job title"
+          id="designation"
+          required
+        />
+        <button type="submit">
+          <span id="btnText">Create User</span>
+          <span id="loading"><i class="fa-solid fa-spinner fa-spin"></i></span>
+        </button>
+        <p class="accoutnCreateSuccess">Account Create Successfull!</p>
+      </form>
+      <ul id="userList"></ul>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

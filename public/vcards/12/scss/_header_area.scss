@@ -1,0 +1,90 @@
+#header_area{
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .header_top_area{
+    background-image: url(../img/header_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+    width: 80%;
+    margin: auto;
+    margin-top: -150px;
+    img{
+      width: 50px;
+      display: block;
+      margin: auto;
+      padding-top: 170px;
+    }
+    h4{
+      color: $whColor;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: $fw_SM;
+      font-size: 18px;
+    }
+  }
+  .inner_header_area{
+    width: 100%;
+    height: 250px;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .header_logo_box{
+      width: 100%;
+      max-width: 180px;
+      z-index: 1;
+      position: absolute;
+      bottom: 120px;
+      img{
+        overflow: hidden;
+        width: 100%;
+        border-radius: 100%;
+        border: 4px solid $whColor;
+      }
+    }
+  }
+}
+#header_txt_area{
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  height: 350px;
+  line-height: 1.7em;
+  overflow: hidden;
+  background-image: url(../img/logo_area-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: -190px;
+  padding-top: 100px;
+  h1{
+    text-align: center;
+    color: $whColor;
+    font-size: 35px;
+    font-weight: 800;
+    font-weight: $fw_MD;
+  }
+  h5{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: $whColor;
+    font-weight: $fw_SM;
+  }
+  p{
+    font-size: 16px;
+    font-weight: $fw_SM;
+    font-family: $primaryFont;
+    margin-top: 10px;
+    color: $whColor;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

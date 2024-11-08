@@ -1,0 +1,39 @@
+#social_contact_area{
+  overflow: hidden;
+  margin-bottom: 30px;
+  ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    li{
+      width: 100%;
+      max-width: 50px;
+      display: inline-block;
+      text-align: center;
+      margin: 0% 2%;
+      position: relative;
+      padding: 10px;
+      a{
+        padding: 15px;
+        transition: all 0.5s;
+        background-color: #b7c0d1;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        color: $pColor;
+        font-size: 22px;
+        transition: all 0.5s;
+        &:hover{
+          background-color: $pColor;
+          color: $whColor;
+        }
+      }
+    }
+  }
+}

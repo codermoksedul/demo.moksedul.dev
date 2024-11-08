@@ -1,0 +1,144 @@
+@media screen and (min-width: 768px){
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+  #header_txt_area{
+    width: 90%;
+    margin: auto;
+    h1{
+      font-size:30px;
+    }
+    h5{
+      font-size: 17px;
+      letter-spacing: 0px;
+    }
+    p{
+      font-size: 14px;
+      padding: 0px;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  #business_card_area{
+    width: 100%;
+  }
+  #header_txt_area{
+    width: 90%;
+    margin: auto;
+    height: 450px;
+    h1{
+      font-size:35px;
+    }
+    h5{
+      font-size: 18px;
+      letter-spacing: 0px;
+    }
+    p{
+      font-size: 16px;
+      padding: 10px 50px;
+    }
+  }
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  #business_card_area{
+    width: 100%;
+  }
+  #header_txt_area{
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    h1{
+      font-size:35px;
+    }
+    h5{
+      font-size: 20px;
+      letter-spacing: 0px;
+    }
+    p{
+      font-size: 16px;
+      padding: 0px;
+    }
+  }
+  #contact_with_me_area{
+    ul{
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 540px){
+  #business_card_area{
+    width: 100%;
+  }
+  #header_txt_area{
+    padding: 40px 20px;
+    width: 90%;
+    margin: auto;
+    height: 350px;
+    h1{
+      font-size:30px;
+    }
+    h5{
+      font-size: 17px;
+      letter-spacing: 0px;
+    }
+    p{
+      font-size: 14px;
+      padding:0px;
+    }
+  }
+}
+@media screen and (max-width: 440px){
+  #business_card_area{
+    width: 100%;
+  }
+  #header_txt_area{
+    padding: 40px 20px;
+    width: 90%;
+    margin: auto;
+    height: 285px;
+    h1{
+      font-size:30px;
+    }
+    h5{
+      font-size: 17px;
+      letter-spacing: 0px;
+    }
+    p{
+      font-size: 14px;
+      padding:0px;
+    }
+  }
+}
+@media screen and (max-width: 375px){
+  #business_card_area{
+    width: 100%;
+  }#header_txt_area{
+    width: 90%;
+    margin: auto;
+    height: auto !important;
+    h1{
+      font-size:25px;
+    }
+    h5{
+      font-size: 15px;
+      letter-spacing: 0px;
+    }
+    p{
+      font-size: 12px;
+      padding: 0px;
+    }
+  }
+  
+  #contact_with_me_area{
+    ul{
+      width: 95%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+// color here
+$pColor: #01a15e;
+$bgColor: #01a15e;
+$whColor: #fff;
+
+// font
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//   font family
+$pFont: 'Poppins', sans-serif;
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: $pFont;
+}
+#main_box{
+    background-color: $whColor;
+    border-radius: 12px;
+    max-width: 800px;
+    min-height: 450px;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    .heading_title{
+        text-align: center;
+        padding-bottom: 25px;
+        color: $pColor;
+        font-size: 32px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    form{
+        textarea{
+            width: 100%;
+            min-width: 100%;
+            min-height: 300px;
+            max-height: 500px;
+            max-width: 100%;
+            padding: 10px;
+            border: 1px solid #0000003f;
+            border-radius: 7px;
+            font-size: 1rem;
+            font-family: $pFont;
+            outline: none;
+        }
+        button{
+            background-color: $pColor;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            padding: 6px 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $whColor;
+            cursor: pointer;
+        }
+        
+        .function_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: start;
+            user-select: none;
+            .more_func{
+                display: none; 
+                flex-direction: row;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+                input{
+                    margin-right: 4px
+                };
+            }
+            input{
+                margin-right: 5px;
+            }
+            .more_option_btn{
+                padding: 2px 5px;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                background-color: #ffffff1a;
+                color: #000;
+                border: 1px solid #00000041;
+                margin-left: 10px;
+            }
+            .active_more_btn_icon{
+                transition: all 0.5s;
+                transform: rotate(180deg);
+            }
+            .active_more_func{
+                display: block !important;
+            }
+        }
+    }
+    .output{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+}

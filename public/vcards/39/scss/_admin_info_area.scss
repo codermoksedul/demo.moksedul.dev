@@ -1,0 +1,37 @@
+#admin_info_area{
+  margin-top: 20px;
+  width: 100%;
+  .inner_admin_info_area{
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .admin_info_img{
+      img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.466);
+      }
+    }
+    .admin_info_information{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        color: #fff;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 19px;
+        margin-top: 10px;
+        letter-spacing: 0.6px;
+        text-shadow: 0px 0px 5px 0px #fff;
+        font-weight: 700;
+        text-align: center;
+      }
+      h5{
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+}

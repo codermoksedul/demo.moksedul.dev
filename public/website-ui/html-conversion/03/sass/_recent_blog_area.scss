@@ -1,0 +1,84 @@
+#blog_area{
+  width: 100%;
+  overflow: hidden;
+  padding: 70px 0px;
+  .title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card{
+    margin-top: 25px;
+    transition: all 0.5s;
+    .card-img-top{
+      width: 100%;
+      height: 200px;
+    }
+    .card-body{
+      padding: 5px 10px ;
+      .card-title{
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        color: $txtColor;
+        transition: all 0.5s;
+        &:hover{
+          color: $pColor;
+        }
+      }
+      .time{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0px;
+        i{
+          color: $pColor;
+        }
+      }
+    }
+    &:hover{
+      transform: translateY(-10px);
+    }
+  }
+}
+
+// contact area start
+#contact_area{
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0px;
+  background-color: $pColor;
+  .inner_contact_area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .contact_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 25px;
+      .icon{
+        font-size: 40px;
+      }
+      .info{
+        .title{
+          color: $whColor;
+          font-size: 22px;
+          font-weight: 600;
+        }
+        span{
+          color: $whColor;
+          margin-top: 10px;
+          font-weight: 500;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+// contact area end

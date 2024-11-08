@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Yantramanav", sans-serif;
+}
+.active {
+  color: #ff5e14;
+}
+.contact_area {
+  background: url(../img/contact-bg.webp);
+}
+.hero_area {
+  background: url(../img/hero-bg.webp);
+}
+.testimonial_area {
+  background: url(../img/testimonial-bg.webp);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}

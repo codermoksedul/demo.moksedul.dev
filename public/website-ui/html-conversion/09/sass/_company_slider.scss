@@ -1,0 +1,24 @@
+#company_slider_area{
+    width: 100%;
+    padding: 70px;
+    overflow: hidden;
+    z-index: 0;
+    .company_slider_box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+    li{
+      list-style: none;
+      filter: grayscale(1);
+      transition: all 0.5s;
+      &:hover{
+        filter: grayscale(0);
+      }
+      img{
+        width: 100%;
+      }
+    }
+}

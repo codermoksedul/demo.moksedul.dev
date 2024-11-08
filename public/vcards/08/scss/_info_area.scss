@@ -1,0 +1,49 @@
+#contact_area{
+  overflow: hidden;
+  .inner_contact_area{
+    padding: 20px 20px;
+    background-color: $whColor;
+    ul{
+      padding: 0px 10px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      li{
+        margin-top: 10px;
+        a{
+          text-decoration: none !important;
+          display: block;
+          font-weight: $fw_SM;
+          font-size: 1.1rem;
+          color: $txtColor !important;
+          display: inline-flex;
+          &:hover{
+            color: #0000ff !important;
+          }
+        }
+        span{
+          border: 1px solid $pColor;
+          border-radius: 100%;
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          color: $pColor;
+          margin-left: 10px;
+        }
+        &:nth-child(1){
+          a{
+            text-decoration: underline;
+            color: #0000ff;
+            &:hover{
+              color: $pColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

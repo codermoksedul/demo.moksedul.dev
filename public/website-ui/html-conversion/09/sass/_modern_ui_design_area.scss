@@ -1,0 +1,158 @@
+#modern_ui_design_area{
+    width: 100%;
+    padding: 70px 0px;
+    overflow: hidden;
+    background-color: #F6F4FE;
+    z-index: 0;
+    .inner_modern_ui_design_area{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading_box{
+        h2, p{
+            text-align: left;
+            margin: 0px;
+            margin-top: 10px;
+        }
+    }
+    .list_box_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 25px;
+        margin-top: 20px;
+        li{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            .icon{
+                background-color: $pColor;
+                color: $whColor;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px;
+                border-radius: 100%;
+            }
+        }
+    }
+    .img_box{
+        position: relative;
+        z-index: 0;
+        .images_box{
+            &::after{
+                content: "";
+                width: 550px;
+                height: 550px;
+                background-color: $whColor;
+                position: absolute;
+                left: -2%;
+                top: -5%;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            img{
+                animation: 1.2s moderImgAnimate infinite alternate linear;
+                &:nth-child(2){
+                    position: absolute;
+                    top: 0px;
+                    right:25%;
+                    z-index: -1;
+                    animation: 1.2s moderImgAnimate2 infinite alternate linear;
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    top: 50px;
+                    right:10%;
+                    animation: 1.2s moderImgAnimate2 infinite alternate linear;
+                }
+                &:nth-child(4){
+                    position: absolute;
+                    top: 300px;
+                    right:20%;
+                    animation: 1.2s moderImgAnimate2 infinite alternate linear;
+                }
+                @keyframes moderImgAnimate2 {
+                    from{
+                        transform: translateY(10px);
+                    }
+                    to{
+                        transform: translateY(-10px);
+                    }
+                }
+            }
+            
+            @keyframes moderImgAnimate {
+                from{
+                    transform: translateY(-10px);
+                }
+                to{
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #modern_ui_design_area{
+        .inner_modern_ui_design_area{
+            grid-template-columns: 1fr;
+        }
+        .images_box{
+                &::after{
+                    width: 500px !important;
+                    height: 500px !important;
+                    left: -15%;
+                    top: -5%;
+                }
+            img{
+                &:nth-child(2){
+                    right: 5% !important;
+                }
+                &:nth-child(3){
+                    right: 0% !important;
+                }
+                &:nth-child(4){
+                    right: 0% !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    #modern_ui_design_area{
+        .images_box{
+            &::after{
+            width: 500px !important;
+            height: 500px !important;
+            left: 0%;
+            top: -5%;
+        }
+            img{
+                &:nth-child(2){
+                    right: 5% !important;
+                    width: 10%;
+                }
+                &:nth-child(3){
+                    right: 0% !important;
+                    width: 50%;
+                }
+                &:nth-child(4){
+                    right: 0% !important;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

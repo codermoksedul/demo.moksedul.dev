@@ -1,0 +1,48 @@
+#about_us_area{
+  width: 100%;
+  overflow: hidden;
+  padding: 70px 0px 0px;
+  background-color: #F1F1F1;
+  .about_info{
+    h2{
+      font-size: 27px;
+      font-weight: 700;
+      color: $txtColor;
+    }
+    p{
+      font-size: 15px;
+      line-height: 20px;
+      color: $txtColor;
+      width: 100%;
+      margin-top: 15px;
+    }
+    ul{
+      padding: 20px 0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      li{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+        font-weight: 600;
+        i{
+          background-color: $pColor;
+          color: $whColor;
+          padding: 3px;
+          border-radius: 100%;
+          width: 15px;
+          height: 15px;
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

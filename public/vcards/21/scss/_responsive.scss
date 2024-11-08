@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px){
+  .contact_info_area{
+    ul{
+      li{
+        a{
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
+  #header_txt_area{
+    h1{
+      font-size: 35px !important;
+    }
+  }
+  .contact_address_area{
+    ul{
+      li{
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  #business_card_area{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px){
+  #business_card_area{
+    width: 100%;
+  }
+  #header_txt_area{
+    h1{
+      font-size: 35px !important;
+    }
+  }
+  .social_icon_box{
+    ul{
+      gap: 15px !important;
+      li{
+        a{
+          font-size: 20px !important;
+          height: 40px !important;
+          width: 40px !important;
+        }
+      }
+    }
+  }
+  .contact_info_area{
+    ul{
+      li{
+        a{
+          font-size: 16px !important;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          i{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 388px){
+  .contact_info_area{
+    ul{
+      li{
+        a{
+          font-size: 0.9rem !important;
+        }
+      }
+    }
+  }
+  .contact_address_area{
+    ul{
+      li{
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+  #header_txt_area{
+    h5{
+      font-size: 16px !important;
+    }
+  }
+}
+@media screen and (max-width: 350px){
+  #header_txt_area{
+    h5{
+      font-size: 14px !important;
+    }
+  }
+}

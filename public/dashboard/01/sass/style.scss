@@ -1,0 +1,60 @@
+// utilities area custom css here-----
+@import "utilities";
+
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    position: relative;
+    font-family: $pFont;
+    display: flex;
+    background-color: $bgColor;
+}
+img{
+    max-width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(8, 0, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(74, 78, 112, 0.781);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $pColor;
+  }
+
+//-----------custom css list here------------
+// menu area here
+@import "menu_area";
+
+// interface area here
+@import "interface_area";
+
+// dashboard interface area here
+@import "dashboard_interface_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// light mode area custom css here-----
+@import "light_mode";
+

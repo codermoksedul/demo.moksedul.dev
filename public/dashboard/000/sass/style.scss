@@ -1,0 +1,37 @@
+// utilitties area custom css here-----
+@import "utilitties";
+*, *::after, *::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    font-family: $pFont;
+    background-color: $bgColor;
+    display: flex;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+
+//-----------custom css list here------------
+
+// menu area custom css here-----
+@import "menu_area";
+
+// interface area custom css here-----
+@import "interface_area";
+
+// responsive area custom css here-----
+@import "responsive";
+
+// light theme area custom css here-----
+@import "light_theme";
+

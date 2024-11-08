@@ -1,0 +1,117 @@
+// menu area here
+#menu_area{
+  width: 300px;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  background-color: $sColor;
+  border-right: 1px solid rgba(255, 255, 255, 0.055);
+  transition: all 0.5s;
+  .logo_box{
+    height: 80px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+      a{
+        text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0px;
+      .logo_icon{
+        width: 35px;
+      }
+      .logo_txt{
+        span{
+          font-size: 25px;
+          font-weight: 800;
+          color: $whColor;
+        }
+      }
+    }
+  }
+  .left_menu_box{
+    padding: 10px;
+    margin-top: 20px;
+    .title{
+      font-size: 16px;
+      color: $swhColor;
+      font-weight: 500;
+
+    }
+    .menu_list_box{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          width: 100%;
+          display: block;
+          padding: 17px 0px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+          transition: all 0.3s;
+          cursor: pointer;
+          .menu_icon{
+            color: $swhColor;
+            padding: 10px;
+          }
+          .menu_txt{
+            color: $whColor;
+            font-size: 16px;
+            font-weight: 500;
+          }
+          &:hover{
+            .menu_icon, .menu_txt{
+              color: $pColor;
+            }
+          }
+        }
+        .active_menu{
+          .menu_icon, .menu_txt{
+            color: $pColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.collapse_menu_area_active{
+  width: 85px !important;
+  .logo_box{
+    a{
+      .logo_txt{
+        display: none;
+      }
+    }
+  }
+  .left_menu_box{
+    .title{
+      display: none;
+    }
+    .menu_list_box{
+      gap: 0px !important;
+      align-items: center;
+      li{
+        a{
+          .menu_icon{
+            font-size: 20px;
+          }
+          .menu_txt{
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}

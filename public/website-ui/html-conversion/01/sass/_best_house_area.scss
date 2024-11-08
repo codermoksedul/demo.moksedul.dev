@@ -1,0 +1,215 @@
+#best_house_area{
+    width: 100%;
+    padding: 50px 0px;
+    .main_house_box{
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        transition: all 0.5s;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 #0000001e;
+        margin-top: 30px;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(3, 3, 3, 0.534);
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+        .house_box_thumbnail{
+            width: 100%;
+            height: 100% !important;
+            z-index: -1;
+            img{
+                width: 100%;
+                height: 100%;
+                transition: all 0.5s;
+            }
+        }
+        .category_box{
+            position: absolute;
+            z-index: 1;
+            top: 0px;
+            left: 20%;
+            padding:5px 20px;
+            width: 60%;
+            background-color: $pColor;
+            color: $whColor;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+        }
+        .product_info_box{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 1;
+            .user_info_box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 20px;
+                .user_box{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 10px;
+                    .user_icon{
+                        img{
+                            width: 40px;
+                            border-radius: 100%;
+                        }
+                    }
+                    .username_box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: start;
+                        gap: 20px;
+                        .user_name{
+                            color: $whColor;
+                            font-size: 15px;
+                            text-transform: capitalize;
+                            line-height: 0px;
+                            text-decoration: none;
+                            font-weight: 500;
+                            &:hover{
+                                color: $pColor;
+                            }
+                        }
+                        .service_location{
+                           color: $whColor; 
+                           font-size: 13px;
+                           line-height: 0px;
+                        }
+                    }
+                }
+                
+                .add_favorit_btn{
+                    button{
+                        color: $whColor;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $pColor;
+                        }
+                    }
+                }
+            }
+            .price_box_area{
+                background-color: rgba(0, 0, 0, 0.534);
+                padding: 10px 20px;
+                box-shadow: 0px -9px 20px 0px #000000ad;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .price_box{
+                    .product_price{
+                        color: $whColor;
+                        font-size: 12px;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                .house_details_box{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    align-items: center;
+                    gap: 10px;
+                    .icon_box{
+                        color: $whColor;
+                        font-size: 13px;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                    .size_box{
+                        color: $whColor;
+                        font-size: 13px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 5px;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .house_box_thumbnail{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+// video box area start
+#moder_house_video{
+    background: linear-gradient(45deg, #07153ae1,#07153ae1), url(../img/video-box-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+    min-height: 300px;
+    .inner_modern_house_video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: $whColor;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            max-width: 600px;
+            text-align: center;
+            color: $whColor;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .video_box{
+            button{
+                font-size: 25px;
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                color: $pColor;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 0px 2px #000;
+                transition: all 0.5s;
+                animation: 2s playButton_animate infinite linear;
+                margin-top: 30px;
+            }
+            @keyframes playButton_animate {
+               0%{
+                box-shadow: 0 0 0px 0px #fafafa;
+               } 
+               50%{
+                box-shadow: 0 0 0px 15px #d1d1d12d;
+               } 
+               100%{
+                box-shadow: 0 0 0px 30px #c2c2c205;
+               } 
+            }
+        }
+    }
+}
+// video box area end

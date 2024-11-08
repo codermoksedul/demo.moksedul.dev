@@ -1,0 +1,438 @@
+*,*::after{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'poppins', sans-serif;
+    max-width: 1600px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1170px;
+}
+//heading design
+.heading_design{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    span {
+        padding: 3px;
+        width: 10%;
+        height: 0px;
+        background: #ff5a58;
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 4px;
+    }
+    h2{
+        font-weight: 600;
+    }
+}
+.btn_design{
+    border: 3px solid #4aafff;
+    color: #4aafff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.btn_design:hover{
+    background-color: #4aafff !important;
+    color: #fff !important;
+}
+//====================header aria=====================
+#header_aria{
+    .navbar{
+        .navbar-brand{
+            img{
+                max-width: 90px;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                li{
+                    a {
+                        font-weight: 600;
+                        font-size: 14px;
+                        padding: 0px 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//==================hero aria=======================
+#hero_aria{
+    .hero_info{
+        h1{
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        p{
+            margin-top: 20px;
+        }
+        button.btn{
+            border: 3px solid #4aafff;
+            color: #4aafff;
+            padding: 10px 30px;
+            border-radius: 25px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        button.btn:last-child {
+            border-color: #ff5a58ed !important;
+            color: #000 !important;
+        }
+        button.btn:hover{
+            background-color: #4aafff;
+            color: #fff;
+        }
+        button.btn:last-child:hover{
+            background-color: #ff5a58;
+            color: #fff !important;
+        }
+    }
+}
+
+//================= service_aria =================
+#service_aria{
+    .wlc_service{
+        background-image: url(../img/service/service-wlc-bg.webp);
+        background-repeat: no-repeat;
+        background-position: left;
+        min-height: 600px;
+        padding: 10px;
+        h1{
+            font-size: 3rem;
+            font-weight: 600;
+            margin-top: 70px;
+            position: relative;
+            
+            }
+            h1::after {
+                content: "";
+                position: absolute;
+                height: 10px;
+                width: 15%;
+                background-color: #ff5a58;
+                top: -10px;
+                left: 0px;
+                border-radius: 10px;
+            }
+        p{
+            margin-top: 30px;
+            color: #000;
+        }
+        button{
+            border: 3px solid #4aafff;
+            border-radius: 25px;
+            margin-top: 40px;
+            padding: 10px 30px;
+            color: #4aafff;
+            font-weight: 600;
+        }
+        button:hover{
+            color: #fff;
+            background-color: #4aafff;
+        }
+    }
+    .main_service_aria{
+        min-height: 600px;
+        .service_box{
+            .card{
+                color: #fff;
+                background: #1b5a8d;
+                transition: all 0.5s;
+                padding: 30px 0px;
+                .service_logo{
+                    font-size: 80px;
+                    color: #fff;
+                }
+                .card-body{
+                    padding-top: 0px;
+                }
+                .card-title{
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 1.3rem;
+                }
+                .card-text{
+                    font-size: 0.9rem;
+                    margin-top: 20px;
+                    color: #f3f3f3;
+                }
+                a.btn{
+                    color: #fff ;
+                    border: 3px solid #fff;
+                    border-radius: 25px;
+                    padding: 3px 20px;
+                }
+                a.btn:hover{
+                    background: #fff;
+                    color: #1b5a8d;
+                }
+            }
+        }
+        .service_box .card:hover{
+            background: #ff5a58;
+            transform: translateY(-10px);
+        }
+    }
+}
+
+//===================project aria==================
+#project_aria{
+    .project_box_aria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        .project_box{
+            height: 300px;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            transition: all 0.5s;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+            .inner_porject_box{
+                background-color: #ffffffe3;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: scale(2);
+                opacity: 0;
+                transition: all 0.5s;
+                .project_logo {
+                    font-size: 50px;
+                    color: #fff;
+                    text-align: center;
+                    background: #ff5a58;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                }
+                a{
+                    font-weight: 600;
+                    margin-top: 10px;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    color: #000;
+                    cursor: pointer;
+
+                }
+                a:hover{
+                    color: #ff5a58;
+                }
+            }
+        }
+        .project_box:hover{
+            transform: translateY(-10px);
+            .inner_porject_box{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .project_box:nth-child(odd){
+            background-color: blue;
+        }
+        .project_box:nth-child(1){
+            height: 320px;
+            background-image: url(../img/bg/01.webp);
+        }
+        .project_box:nth-child(2){
+            height: 280px;
+            background-image: url(../img/bg/02.webp);
+        }
+        .project_box:nth-child(3){
+            height: 280px;
+            background-image: url(../img/bg/03.webp);
+        }
+        .project_box:nth-child(4){
+            height: 300px;
+            margin-top: -20px;
+            background-image: url(../img/bg/04.webp);
+        }
+
+    }
+}
+//=======================company count down aria======================
+#count_down_aria{
+    background-color: #ff5a58;
+    margin: 50px 0px;
+    .inner_count_down_aria{
+        .count_down_box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+            .count_down_logo{
+                font-size: 40px;
+            }
+            h5{
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+//=================team aria==========================
+#team_aria{
+    .team_member_box {
+            border: none;
+            box-shadow: 0px 0px 5px 0px #0000001c;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.5s;
+        .card-img_top {
+            width: 180px;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 100%;
+            margin: auto;
+            border: 10px solid #fff;
+            box-shadow: 0px 0px 9px 0px #0071b359;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .card-title{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .card-subtitle{
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        .team_social_share{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                margin: 5px;
+                border: none;
+                box-shadow: 0px 0px 4px 0px #00000047;
+                border-radius: 100%;
+                padding: 3px 6px;
+                color: #fff;
+                background: #306a98;
+                transition: all 0.5s;
+            }
+            a:hover{
+                background-color: #fff;
+                color: #1b5a8d;
+            }
+        }
+    }
+    .team_member_box:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 8px 11px 0px rgb(0 0 0 / 11%);
+    }
+}
+
+.back_top_btn{
+    background-color: #1b5a8d;
+    padding: 5px 10px;
+    border-radius: 2px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+}
+.back_top_btn:hover{
+    background-color: #ff5a58 !important;
+    color: #fff !important;
+}
+//=======================client testimonial aria====================
+#client_testimonial_aria{
+    .client_testimonial_box{
+        border: none;
+        .card-img-top{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin: auto;
+        }
+        .card-text{
+            font-size: 1rem;
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+        
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 40px;
+        background: transparent;
+        margin: 5px;
+        height: 10px;
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 100%;
+        height: 12px;
+        margin: 5px 7px;
+        background: #ff5a58;
+        display: block;
+        transition: opacity .2s ease;
+        border-radius: 30px;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #1b5a8d !important;
+    }
+}
+//============footer aria======================
+#footer_aria{
+    background: #121212;
+    color: rgb(212, 212, 212);
+    .footer_header{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    li {
+        list-style: none;
+        padding: 10px 0px;
+        a{
+            text-decoration: none;
+            color: rgb(212, 212, 212);
+            font-size: 0.8rem;
+        }
+    }
+    
+    .copyright_aria{
+        border-top: 1px solid rgb(85, 85, 85);
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        color: #fff;
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            color: cyan;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+}
